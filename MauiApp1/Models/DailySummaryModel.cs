@@ -14,7 +14,28 @@ namespace Sleepwise.Models
 
         public MoodEnums moodEnum { get; set; }
         
+        public string moodImageName { get {
+                
+                if (Moods.moodMappings.TryGetValue(moodEnum, out var moodMapping))
+                {
+                    return moodMapping.MoodImageName;
+                }
+                return "-";
+            }
+        }
+        public ImageSource moodImageSource
+        {
+            get
+            {
 
+                if (Moods.moodMappings.TryGetValue(moodEnum, out var moodMapping))
+                {
+                    return moodMapping.ImageSrc;
+                }
+                return "-";
+            }
+
+        }
         private List<InsightEnums> _insight;
 
         public List<InsightMapping> InsightsString

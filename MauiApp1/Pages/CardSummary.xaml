@@ -15,11 +15,12 @@
             <RoundRectangle CornerRadius="10,10,10,10" />
         </Border.StrokeShape>
         <VerticalStackLayout >
-           
+
             <FlexLayout Direction="Row"
                 JustifyContent="Start"
             >
-                <Image Source="happy.png" WidthRequest="50" HeightRequest="50" />
+                <Image WidthRequest="50" HeightRequest="50" Source="happy.png" />
+
                 <BoxView WidthRequest="2" HeightRequest="50" Color="Black" Margin="2"/>
                 <VerticalStackLayout >
                     <Label IsVisible="{Binding IsNightSummary}" Text="Last Night's Sleep"></Label>

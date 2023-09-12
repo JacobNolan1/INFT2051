@@ -11,8 +11,8 @@ public partial class HomePage : ContentPage
         DailySummaryModel nightDailySummaryModel = new DailySummaryModel()
         {
             IsNightSummary=true,
-            moodEnum=MoodEnums.Amazing,
-            Insights = new List<InsightEnums> { InsightEnums.SleepWell },
+            moodEnum=MoodEnums.Average,
+            Insights = new List<InsightEnums> { InsightEnums.Tired },
         };
         DailySummaryModel dayDailySummaryModel = new DailySummaryModel()
         {
