@@ -16,6 +16,28 @@ namespace Sleepwise.Models
         SleepWell,
         Tired
     }
+    public enum MoodEnums
+    {
+        Terrible,
+        Bad,
+        Average,
+        Good,
+        Amazing,
+    }
+
+
+    public static class Moods
+    {
+        public static readonly Dictionary<MoodEnums, string> moodMappings = new Dictionary<MoodEnums, string>
+        {
+            { MoodEnums.Terrible, "Terrible"},
+            { MoodEnums.Bad, "Bad"},
+            { MoodEnums.Average, "Average"},
+            { MoodEnums.Good, "Good"},
+            { MoodEnums.Amazing, "Amazing"}
+        };
+
+    }
 
     public static class SleepInsights
     {

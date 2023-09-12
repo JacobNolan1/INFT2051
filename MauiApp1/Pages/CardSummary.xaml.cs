@@ -1,9 +1,18 @@
-namespace Sleepwise.Pages;
+using Sleepwise.Models;
 
-public partial class CardSummary : ContentView
+namespace Sleepwise.Pages
 {
-	public CardSummary()
-	{
-		InitializeComponent();
-	}
+    public partial class CardSummary : ContentView
+    {
+        public CardSummary()
+        {
+            InitializeComponent();
+        }
+
+        public DailySummaryModel SummaryModel
+        {
+            get { return (DailySummaryModel)BindingContext; }
+            set { BindingContext = value; }
+        }
+    }
 }

@@ -5,13 +5,17 @@ using System.Runtime.CompilerServices;
 
 namespace Sleepwise.Models
 {
-    internal class ImpactSummaryModel : INotifyPropertyChanged
+    public class DailySummaryModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
+
+        public bool IsNightSummary { get; set; }
+        public bool IsDaySummary { get; set; }
+
+        public MoodEnums moodEnum { get; set; }
+        
+
         private List<InsightEnums> _insight;
-        public string Title { get; set; }
-
-
 
         public List<InsightMapping> InsightsString
         {
@@ -27,14 +31,6 @@ namespace Sleepwise.Models
                 return result;
             }
         }
-        public List<InsightMapping> FirstTwoInsightsStrings
-        {
-            get
-            {
-                return InsightsString.Take(2).ToList();
-            }
-        }
-
         public List<InsightEnums> Insights
         {
             get { return _insight; }
@@ -43,7 +39,6 @@ namespace Sleepwise.Models
                 _insight = value;
             }
         }
-
         // Helper method to raise PropertyChanged event
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {

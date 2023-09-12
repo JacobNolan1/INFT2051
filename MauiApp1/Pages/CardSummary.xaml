@@ -14,14 +14,16 @@
             <RoundRectangle CornerRadius="10,10,10,10" />
         </Border.StrokeShape>
         <VerticalStackLayout >
+           
             <FlexLayout Direction="Row"
                 JustifyContent="Start"
             >
                 <Image Source="happy.png" WidthRequest="50" HeightRequest="50" />
                 <BoxView WidthRequest="2" HeightRequest="50" Color="Black" Margin="2"/>
                 <VerticalStackLayout >
-                    <Label Text="Last Night's Sleep" />
-                    <Label Text="Really Good" />
+                    <Label IsVisible="{Binding IsNightSummary}" Text="Last Night's Sleep"></Label>
+                    <Label IsVisible="{Binding IsDaySummary}" Text="Today's Summary"></Label>
+                    <Label Padding="0,0,0,10" Text="{Binding moodEnum}" FontAttributes="Bold" />
                 </VerticalStackLayout>
             </FlexLayout>
             <BoxView HeightRequest="1" Color="Red"/>
@@ -48,6 +50,9 @@
                 </Image>
                 <Label Grid.Row="0" Grid.Column="3" Text="Social Interaction" HorizontalOptions="Center" VerticalOptions="Center" />
             </Grid>
+            <Label Text="{Binding moodEnum}" />
+            <Label Text="Is Night Summary: " />
+            <Switch IsToggled="{Binding IsNightSummary}" />
         </VerticalStackLayout >
 
     </Border>

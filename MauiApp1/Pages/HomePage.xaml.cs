@@ -7,23 +7,36 @@ public partial class HomePage : ContentPage
 	public HomePage()
 	{
 		InitializeComponent();
-        // Create an instance of ImpactSummaryModel
+
+        DailySummaryModel nightDailySummaryModel = new DailySummaryModel()
+        {
+            IsNightSummary=true,
+            moodEnum=MoodEnums.Amazing,
+            Insights = new List<InsightEnums> { InsightEnums.SleepWell },
+        };
+        DailySummaryModel dayDailySummaryModel = new DailySummaryModel()
+        {
+            IsDaySummary = true,
+            moodEnum = MoodEnums.Bad,
+            Insights = new List<InsightEnums> { InsightEnums.SleepWell },
+        };
+
+        nightDailySummary.BindingContext = nightDailySummaryModel;
+        dayDailySummary.BindingContext = dayDailySummaryModel;
+
         ImpactSummaryModel positiveImpactSummaryModel = new ImpactSummaryModel()
         {
             Title = "Positive Impacts on Sleep",
-            Insights = new List<InsightEnums> { InsightEnums.SleepWell},
+            Insights = new List<InsightEnums> { InsightEnums.SleepWell, InsightEnums.Tired},
         };
 
         ImpactSummaryModel negativeImpactSummaryModel = new ImpactSummaryModel()
         {
             Title = "Negative Impacts on Sleep",
-            Insights = new List<InsightEnums> { InsightEnums.Alcohol, InsightEnums.Tired},
+            Insights = new List<InsightEnums> { InsightEnums.Alcohol, InsightEnums.Tired, InsightEnums.Tired},
         };
 
-        // Set the BindingContext for the first ImpactSummary component
         positiveImpactSummary.BindingContext = positiveImpactSummaryModel;
-
-        // Set the BindingContext for the second ImpactSummary component
         negativeImpactSummary.BindingContext = negativeImpactSummaryModel;
     }
 }

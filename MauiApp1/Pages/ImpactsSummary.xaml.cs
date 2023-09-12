@@ -22,13 +22,6 @@ public partial class ImpactsSummary : ContentView
 
     public ImpactsSummary()
 	{
-    /*
-        model = new ImpactSummaryModel()
-        {
-            Title = "Positive Impacts"
-        };
-        BindingContext = model;
-    */
         InitializeComponent();
 	}
 }

@@ -10,32 +10,23 @@
             Stroke="Black"
             StrokeThickness="4"
             Background="pink"
-            Padding="20"
+            Padding="5"
         >
             <Border.StrokeShape>
                 <RoundRectangle CornerRadius="10,10,10,10" />
             </Border.StrokeShape>
-            <Grid >
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-                <local:IconImage Grid.Row="0" Grid.Column="0" VerticalOptions="Center"/>
-                <local:IconImage Grid.Row="0" Grid.Column="1" />
-            </Grid>
-        </Border>
-        <StackLayout Orientation="Vertical">
-            <CollectionView ItemsSource="{Binding InsightsString}">
+            <CollectionView ItemsSource="{Binding InsightsString}" VerticalOptions="StartAndExpand">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical" Span="2" />
+                </CollectionView.ItemsLayout>
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <local:IconImage InsightObject="{Binding .}" />
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-        </StackLayout>
+
+        </Border>
 
     </VerticalStackLayout>
 </ContentView>

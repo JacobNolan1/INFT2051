@@ -21,7 +21,8 @@
             <Label Grid.Row="0" Grid.Column="1" Text="10-06-2023" HorizontalOptions="Center" VerticalOptions="Center" />
             <Button Grid.Row="0" Grid.Column="2" Text="Forward" HorizontalOptions="End" />
         </Grid>
-        <local:CardSummary />
+        <local:CardSummary x:Name="nightDailySummary"/>
+        <local:CardSummary x:Name="dayDailySummary"/>
         <local:ImpactsSummary x:Name="positiveImpactSummary"/>
         <local:ImpactsSummary x:Name="negativeImpactSummary"/>
 
