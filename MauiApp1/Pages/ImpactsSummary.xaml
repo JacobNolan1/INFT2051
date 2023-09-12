@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Sleepwise.Pages"
+             x:Class="Sleepwise.Pages.ImpactsSummary"
+            xmlns:models ="clr-namespace:Sleepwise.Models">
+    <VerticalStackLayout>
+        <Label Text="{Binding Title}" HorizontalOptions="Center" VerticalOptions="Center" />
+        <Border Margin="10"
+            Stroke="Black"
+            StrokeThickness="4"
+            Background="pink"
+            Padding="20"
+        >
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="10,10,10,10" />
+            </Border.StrokeShape>
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <local:IconImage Grid.Row="0" Grid.Column="0" VerticalOptions="Center"/>
+                <local:IconImage Grid.Row="0" Grid.Column="1" />
+            </Grid>
+        </Border>
+        <StackLayout Orientation="Vertical">
+            <CollectionView ItemsSource="{Binding InsightsString}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <local:IconImage InsightObject="{Binding .}" />
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+
+    </VerticalStackLayout>
+</ContentView>
