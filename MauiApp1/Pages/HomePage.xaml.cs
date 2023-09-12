@@ -18,7 +18,7 @@ public partial class HomePage : ContentPage
         {
             IsDaySummary = true,
             moodEnum = MoodEnums.Bad,
-            Insights = new List<InsightEnums> { InsightEnums.SleepWell },
+            Insights = new List<InsightEnums> { InsightEnums.Alcohol, InsightEnums.Tired },
         };
 
         nightDailySummary.BindingContext = nightDailySummaryModel;
@@ -33,7 +33,7 @@ public partial class HomePage : ContentPage
         ImpactSummaryModel negativeImpactSummaryModel = new ImpactSummaryModel()
         {
             Title = "Negative Impacts on Sleep",
-            Insights = new List<InsightEnums> { InsightEnums.Alcohol, InsightEnums.Tired, InsightEnums.Tired},
+            Insights = new List<InsightEnums> { InsightEnums.Alcohol, InsightEnums.Tired},
         };
 
         positiveImpactSummary.BindingContext = positiveImpactSummaryModel;
