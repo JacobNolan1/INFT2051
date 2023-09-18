@@ -14,6 +14,27 @@ namespace Sleepwise.Models
 
         public MoodEnums moodEnum { get; set; }
         
+        public string imagePath
+        {
+            get {
+                return "happy.png";
+            }
+        }
+        public ImageSource MyImageSource
+        {
+            get
+            {
+                var mood = moodEnum;
+                var src = Moods.moodMappings[moodEnum].ImageSrc;
+                return Moods.moodMappings[moodEnum].ImageSrc;
+                if (Moods.moodMappings.TryGetValue(moodEnum, out var moodMapping))
+                {
+                    var ret = moodMapping.ImageSrc;
+                }
+                return "sad.png";
+            }
+        }
+       
         public string moodImageName { get {
                 
                 if (Moods.moodMappings.TryGetValue(moodEnum, out var moodMapping))

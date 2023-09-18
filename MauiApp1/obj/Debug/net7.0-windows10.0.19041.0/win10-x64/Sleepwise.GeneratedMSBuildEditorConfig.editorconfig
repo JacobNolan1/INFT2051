@@ -34,6 +34,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.CardSummar
 build_metadata.AdditionalFiles.TargetPath = Pages\CardSummary.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\CardSummary.xaml
 
+[C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/CardSummaryButton.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.CardSummaryButton.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\CardSummaryButton.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\CardSummaryButton.xaml
+
 [C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/HomePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.HomePage.xaml

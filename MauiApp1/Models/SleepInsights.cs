@@ -30,11 +30,11 @@ namespace Sleepwise.Models
     {
         public static readonly Dictionary<MoodEnums, MoodMapping> moodMappings = new Dictionary<MoodEnums, MoodMapping>
         {
-            { MoodEnums.Terrible, new MoodMapping("Terrible", "Sleepwise.Resources.Images.happy.png")},
-            { MoodEnums.Bad, new MoodMapping("Bad", "Sleepwise.Resources.Images.happy.png")},
-            { MoodEnums.Average, new MoodMapping("Average", "Sleepwise.Resources.Images.happy.png")},
-            { MoodEnums.Good, new MoodMapping("Good", "Sleepwise.Resources.Images.happy.png")},
-            { MoodEnums.Amazing, new MoodMapping("Amazing", "Sleepwise.Resources.Images.happy.png")}
+            { MoodEnums.Terrible, new MoodMapping("Terrible", "sad_full.png")},
+            { MoodEnums.Bad, new MoodMapping("Bad", "sad.png")},
+            { MoodEnums.Average, new MoodMapping("Average", "meh.png")},
+            { MoodEnums.Good, new MoodMapping("Good", "happy.png")},
+            { MoodEnums.Amazing, new MoodMapping("Amazing", "happy_full.png")}
         };
 
     }
@@ -56,11 +56,11 @@ namespace Sleepwise.Models
         {
             this.MoodString = moodString;
             this.MoodImageName = moodImageName;
-            this.ImageSrc = ImageSource.FromResource(moodImageName);
+            this.ImageSrc = moodImageName;
         }
         public string MoodString { get; set; }
         public string MoodImageName { get; set; }
-        public ImageSource ImageSrc { get; set; }
+        public string ImageSrc { get; set; }
     }
     public class InsightMapping
     {

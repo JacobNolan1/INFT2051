@@ -15,12 +15,23 @@
             <RoundRectangle CornerRadius="10,10,10,10" />
         </Border.StrokeShape>
         <VerticalStackLayout >
+            <Border Stroke="Gray"
+        StrokeThickness="2"
+        StrokeShape="RoundRectangle 40,40,40,40"
+        Background="Gray"
+        HorizontalOptions="Center">
+                <Image WidthRequest="40" HeightRequest="40">
+                    <Image.Source>
+                        <FontImageSource FontFamily="FontAwesomeSolid" Color="White" Glyph="{x:Static models:FontAwesomeIconsRegular.SquarePlus}" />
+                    </Image.Source>
+                </Image>
+            </Border>
 
             <FlexLayout Direction="Row"
                 JustifyContent="Start"
-            >
-                <Image WidthRequest="50" HeightRequest="50" Source="happy.png" />
 
+            >
+                <Image Source="{Binding MyImageSource }" Aspect="AspectFill" WidthRequest="50"   HeightRequest="50" Margin="0,0,5,0"/>
                 <BoxView WidthRequest="2" HeightRequest="50" Color="Black" Margin="2"/>
                 <VerticalStackLayout >
                     <Label IsVisible="{Binding IsNightSummary}" Text="Last Night's Sleep"></Label>
