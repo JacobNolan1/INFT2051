@@ -58,6 +58,18 @@ build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.ImpactsSum
 build_metadata.AdditionalFiles.TargetPath = Pages\ImpactsSummary.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\ImpactsSummary.xaml
 
+[C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/MainPage/FirstPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.MainPage.FirstPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\MainPage\FirstPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\MainPage\FirstPage.xaml
+
+[C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/MainPage/OtherPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.MainPage.OtherPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\MainPage\OtherPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\MainPage\OtherPage.xaml
+
 [C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/SettingsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.SettingsPage.xaml

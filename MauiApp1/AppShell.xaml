@@ -6,7 +6,11 @@
     xmlns:local="clr-namespace:Sleepwise"
     xmlns:models="clr-namespace:Sleepwise.Models"
     Shell.FlyoutBehavior="Disabled">
-     
+
+    <Shell.TitleView>
+        <ContentView IsVisible="false" />
+    </Shell.TitleView>
+
     <TabBar>
         <Tab Title="Home">
             <Tab.Icon>
@@ -30,6 +34,13 @@
             <ShellContent
                           ContentTemplate="{DataTemplate local:Pages.SettingsPage}"/>
         </Tab>
-    </TabBar>    
+        <Tab Title="Test">
+            <Tab.Icon>
+                <FontImageSource FontFamily="FontAwesomeSolid" Glyph="{x:Static models:FontAwesomeIconsSolid.Gears}"/>
+            </Tab.Icon>
+            <ShellContent
+                          ContentTemplate="{DataTemplate local:MainPage}"/>
+        </Tab>
+    </TabBar>
 
 </Shell>

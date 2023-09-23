@@ -1,24 +1,44 @@
-﻿namespace Sleepwise;
+using Microsoft.Maui.Controls;
+using Microsoft.UI.Xaml.Controls.Primitives;
+using Sleepwise.Pages.MainPage;
+using Sleepwise.Utils;
 
-public partial class MainPage : ContentPage
+namespace Sleepwise
 {
-	int count = 0;
+    public partial class MainPage : ContentPage
+    {
+        private bool isMainPage = true; // Initial value, can be set as needed
+        private ContentView contentView;
 
-	public MainPage()
-	{
-		InitializeComponent();
-	}
+        private Button toggleButton; // Added a Button field
 
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		count++;
+        public MainPage()
+        {
+            InitializeComponent();
 
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
+            contentView = new ContentView
+            {
+                Content = (isMainPage) ? new FirstPage() : new OtherPage()
+            };
 
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
+            toggleButton = new Button { Text = "Toggle Page" }; // Create the button
+            toggleButton.Clicked += OnTogglePageClicked; // Subscribe to the Clicked event
+
+            Content = new StackLayout
+            {
+                Children = {
+                    new Label { Text = "Main Page", IsVisible = isMainPage },
+                    new Label { Text = "Other Page", IsVisible = !isMainPage },
+                    contentView,
+                    toggleButton
+                }
+            };
+        }
+
+        private void OnTogglePageClicked(object sender, EventArgs e)
+        {
+            isMainPage = !isMainPage;
+            contentView.Content = (isMainPage) ? new FirstPage() : new OtherPage();
+        }
+    }
 }
-

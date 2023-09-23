@@ -20,7 +20,10 @@
                 <Border.StrokeShape>
                     <RoundRectangle CornerRadius="40,40,40,40" />
                 </Border.StrokeShape>
-                <Image WidthRequest="40" HeightRequest="40">
+                <Image WidthRequest="40" HeightRequest="40" >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ImageButton_Tapped" />
+                    </Image.GestureRecognizers>
                     <Image.Source>
                         <FontImageSource FontFamily="FontAwesomeSolid" Color="White" Glyph="{x:Static models:FontAwesomeIconsRegular.SquarePlus}" />
                     </Image.Source>
