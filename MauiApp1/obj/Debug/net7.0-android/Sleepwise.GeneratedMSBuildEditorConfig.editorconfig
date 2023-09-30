@@ -20,11 +20,11 @@ build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/AppShell.xaml]
+[C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/MainNavigationPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.AppShell.xaml
-build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
-build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.MainNavigationPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainNavigationPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainNavigationPage.xaml
 
 [C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
@@ -32,35 +32,41 @@ build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/CardSummary.xaml]
+[C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/AppSettingsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.CardSummary.xaml
-build_metadata.AdditionalFiles.TargetPath = Pages\CardSummary.xaml
-build_metadata.AdditionalFiles.RelativePath = Pages\CardSummary.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.AppSettingsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AppSettingsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AppSettingsPage.xaml
 
-[C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/CardSummaryButton.xaml]
+[C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/Forms/DaySummary/DayInsightPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.CardSummaryButton.xaml
-build_metadata.AdditionalFiles.TargetPath = Pages\CardSummaryButton.xaml
-build_metadata.AdditionalFiles.RelativePath = Pages\CardSummaryButton.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.Forms.DaySummary.DayInsightPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Forms\DaySummary\DayInsightPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Forms\DaySummary\DayInsightPage.xaml
 
-[C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/HomePage.xaml]
+[C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/Forms/DaySummary/DayRatingPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.HomePage.xaml
-build_metadata.AdditionalFiles.TargetPath = Pages\HomePage.xaml
-build_metadata.AdditionalFiles.RelativePath = Pages\HomePage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.Forms.DaySummary.DayRatingPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Forms\DaySummary\DayRatingPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Forms\DaySummary\DayRatingPage.xaml
 
-[C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/IconImage.xaml]
+[C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/Login/CreateAccountPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.IconImage.xaml
-build_metadata.AdditionalFiles.TargetPath = Pages\IconImage.xaml
-build_metadata.AdditionalFiles.RelativePath = Pages\IconImage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.Login.CreateAccountPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Login\CreateAccountPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Login\CreateAccountPage.xaml
 
-[C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/ImpactsSummary.xaml]
+[C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/Login/LoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.ImpactsSummary.xaml
-build_metadata.AdditionalFiles.TargetPath = Pages\ImpactsSummary.xaml
-build_metadata.AdditionalFiles.RelativePath = Pages\ImpactsSummary.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.Login.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Login\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Login\LoginPage.xaml
+
+[C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/Login/UserLoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.Login.UserLoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Login\UserLoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Login\UserLoginPage.xaml
 
 [C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/MainPage/FirstPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
@@ -74,23 +80,71 @@ build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.MainPage.O
 build_metadata.AdditionalFiles.TargetPath = Pages\MainPage\OtherPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\MainPage\OtherPage.xaml
 
-[C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/SettingsPage.xaml]
+[C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/Old/CardSummary.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.SettingsPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Pages\SettingsPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Pages\SettingsPage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.Old.CardSummary.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Old\CardSummary.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Old\CardSummary.xaml
 
-[C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/StatsPage.xaml]
+[C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/Old/CardSummaryButton.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.StatsPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Pages\StatsPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Pages\StatsPage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.Old.CardSummaryButton.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Old\CardSummaryButton.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Old\CardSummaryButton.xaml
+
+[C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/Old/HomePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.Old.HomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Old\HomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Old\HomePage.xaml
+
+[C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/Old/IconImage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.Old.IconImage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Old\IconImage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Old\IconImage.xaml
+
+[C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/Old/ImpactsSummary.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.Old.ImpactsSummary.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Old\ImpactsSummary.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Old\ImpactsSummary.xaml
+
+[C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/Old/SettingsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.Old.SettingsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Old\SettingsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Old\SettingsPage.xaml
+
+[C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/Old/StatsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.Old.StatsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Old\StatsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Old\StatsPage.xaml
+
+[C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/StatisticsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.StatisticsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\StatisticsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\StatisticsPage.xaml
+
+[C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/SummaryPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.SummaryPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\SummaryPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\SummaryPage.xaml
 
 [C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Resources/Styles/CustomStyles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Resources.Styles.CustomStyles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\CustomStyles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\CustomStyles.xaml
 
 [C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

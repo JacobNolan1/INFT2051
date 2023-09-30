@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sleepwise.Pages.Forms.DaySummary.DayRatingPage"
+             xmlns:models="clr-namespace:Sleepwise.Models"
+             Title="DayRatingPage">
+    <VerticalStackLayout>
+        <Label 
+            Text="Day Rating Page!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Button Text="" Clicked="BackButton_Clicked">
+            <Button.ImageSource>
+                <FontImageSource FontFamily="FontAwesomeSolid" Glyph="{x:Static models:FontAwesomeIconsSolid.ArrowLeft}"/>
+            </Button.ImageSource>
+        </Button>
+        <Border Margin="10"
+            Stroke="Black"
+            StrokeThickness="4"
+            Background="pink"
+            Padding="20"
+        >
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="10,10,10,10" />
+            </Border.StrokeShape>
+            <FlexLayout JustifyContent="SpaceBetween">
+                <ImageButton Source="sad_full.png" WidthRequest="50" HeightRequest="50" Clicked="ImageButton_Clicked" CommandParameter="sad_full" />
+                <ImageButton Source="sad.png" WidthRequest="50" HeightRequest="50" Clicked="ImageButton_Clicked" CommandParameter="sad" />
+                <ImageButton Source="meh.png" WidthRequest="50" HeightRequest="50" Clicked="ImageButton_Clicked" CommandParameter="meh" />
+                <ImageButton Source="happy.png" WidthRequest="50" HeightRequest="50" Clicked="ImageButton_Clicked" CommandParameter="happy" />
+                <ImageButton Source="happy_full.png" WidthRequest="50" HeightRequest="50" Clicked="ImageButton_Clicked" CommandParameter="happy_full" />
+            </FlexLayout>
+        </Border>
+    </VerticalStackLayout>
+</ContentPage>

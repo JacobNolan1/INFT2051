@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sleepwise.Pages.Forms.DaySummary.DayInsightPage"
+             xmlns:models="clr-namespace:Sleepwise.Models"
+             Title="DayInsightPage">
+    <VerticalStackLayout>
+        <Label 
+            Text="Day Insight Page"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Button Text="" Clicked="HomeButton_Clicked">
+            <Button.ImageSource>
+                <FontImageSource FontFamily="FontAwesomeSolid" Glyph="{x:Static models:FontAwesomeIconsSolid.HouseChimneyWindow}"/>
+            </Button.ImageSource>
+        </Button>
+        <Button Text="" Clicked="BackButton_Clicked">
+            <Button.ImageSource>
+                <FontImageSource FontFamily="FontAwesomeSolid" Glyph="{x:Static models:FontAwesomeIconsSolid.ArrowLeft}"/>
+            </Button.ImageSource>
+        </Button>
+    </VerticalStackLayout>
+</ContentPage>

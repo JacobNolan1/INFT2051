@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Color x:Key="PrimaryButton">#333235</Color>
+    <Color x:Key="LightText">#d9d8da</Color>
+
+    <Style TargetType="Button">
+        <Setter Property="TextColor" Value="{StaticResource LightText}" />
+        <Setter Property="BackgroundColor" Value="{StaticResource PrimaryButton}" />
+        <Setter Property="FontFamily" Value="OpenSansRegular"/>
+        <Setter Property="CornerRadius" Value="10"/>
+        <Setter Property="Padding" Value="14,10"/>
+    </Style>
+
+    <Style TargetType="Label" x:Key="HomeLabel">
+        <Setter Property="TextColor" Value="{StaticResource PrimaryButton}" />
+        <Setter Property="FontSize" Value="28" />
+        <Setter Property="FontAttributes" Value="Bold" />
+    </Style>
+
+    <Style TargetType="Label" x:Key="FormLabel">
+        <Setter Property="FontAttributes" Value="Bold" />
+    </Style>
+
+
+</ResourceDictionary>

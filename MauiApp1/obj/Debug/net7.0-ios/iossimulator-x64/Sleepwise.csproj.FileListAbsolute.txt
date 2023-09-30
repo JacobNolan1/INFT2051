@@ -285,3 +285,8 @@ C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\De
 C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-ios\iossimulator-x64\Sleepwise.pdb
 C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-ios\iossimulator-x64\Sleepwise.genruntimeconfig.cache
 C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-ios\iossimulator-x64\ref\Sleepwise.dll
+C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\bin\Debug\net7.0-ios\iossimulator-x64\SQLite-net.dll
+C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\bin\Debug\net7.0-ios\iossimulator-x64\SQLitePCLRaw.batteries_v2.dll
+C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\bin\Debug\net7.0-ios\iossimulator-x64\SQLitePCLRaw.nativelibrary.dll
+C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\bin\Debug\net7.0-ios\iossimulator-x64\SQLitePCLRaw.core.dll
+C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\bin\Debug\net7.0-ios\iossimulator-x64\SQLitePCLRaw.provider.dynamic_cdecl.dll

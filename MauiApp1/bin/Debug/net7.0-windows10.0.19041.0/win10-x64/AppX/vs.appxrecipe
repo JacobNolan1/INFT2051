@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-09-23T10:52:26.213</Modified>
+      <Modified>2023-09-30T05:08:16.173</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-09-23T10:52:22.437</Modified>
+      <Modified>2023-09-30T05:08:15.327</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Sleepwise.runtimeconfig.json">
       <PackagePath>Sleepwise.runtimeconfig.json</PackagePath>
-      <Modified>2023-08-21T11:35:17.997</Modified>
+      <Modified>2023-09-24T06:32:00.942</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Sleepwise.dll">
       <PackagePath>Sleepwise.dll</PackagePath>
-      <Modified>2023-09-19T09:35:57.604</Modified>
+      <Modified>2023-09-30T05:08:13.451</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Sleepwise.exe</PackagePath>
-      <Modified>2023-09-19T09:35:57.693</Modified>
+      <Modified>2023-09-30T05:08:13.519</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.7\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -909,6 +909,26 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
       <Modified>2022-11-08T19:31:22.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\inft2051Student\.nuget\packages\sqlite-net-pcl\1.8.116\lib\netstandard2.0\SQLite-net.dll">
+      <PackagePath>SQLite-net.dll</PackagePath>
+      <Modified>2021-09-02T21:04:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\inft2051Student\.nuget\packages\sqlitepclraw.bundle_green\2.0.4\lib\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll">
+      <PackagePath>SQLitePCLRaw.batteries_v2.dll</PackagePath>
+      <Modified>2020-09-03T17:13:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\inft2051Student\.nuget\packages\sqlitepclraw.bundle_green\2.0.4\lib\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll">
+      <PackagePath>SQLitePCLRaw.nativelibrary.dll</PackagePath>
+      <Modified>2020-09-03T17:13:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\inft2051Student\.nuget\packages\sqlitepclraw.core\2.1.6\lib\netstandard2.0\SQLitePCLRaw.core.dll">
+      <PackagePath>SQLitePCLRaw.core.dll</PackagePath>
+      <Modified>2023-08-23T18:38:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\inft2051Student\.nuget\packages\sqlitepclraw.provider.dynamic_cdecl\2.1.6\lib\netstandard2.0\SQLitePCLRaw.provider.dynamic_cdecl.dll">
+      <PackagePath>SQLitePCLRaw.provider.dynamic_cdecl.dll</PackagePath>
+      <Modified>2023-08-23T18:38:42.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\.nuget\packages\microsoft.graphics.win2d\1.0.4\runtimes\win10-x64\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
       <Modified>2022-10-04T20:41:34.000</Modified>
@@ -917,9 +937,13 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
       <Modified>2022-11-08T19:31:24.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\inft2051Student\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\win-x64\native\e_sqlite3.dll">
+      <PackagePath>e_sqlite3.dll</PackagePath>
+      <Modified>2020-08-17T14:38:20.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Sleepwise.deps.json">
       <PackagePath>Sleepwise.deps.json</PackagePath>
-      <Modified>2023-09-23T10:52:25.905</Modified>
+      <Modified>2023-09-30T05:08:15.971</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.86\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

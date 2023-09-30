@@ -1,13 +1,49 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:Sleepwise.Pages.MainPage"
-             x:Class="Sleepwise.MainPage"
-             Title="MainPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Main Page" IsVisible="{Binding isMainPage}" />
-            <Label Text="Other Page" IsVisible="{Binding isMainPage, Converter={StaticResource InverseBooleanConverter}}" />
-            <ContentView Content="{Binding CurrentPage}" />
-        </StackLayout>
-    </ContentPage.Content>
+             xmlns:pages="clr-namespace:Sleepwise.Pages"
+             x:Class="Sleepwise.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Content in the top row (Summary Label) -->
+        <Label Text="Summary"
+               HorizontalOptions="CenterAndExpand"
+                />
+
+        <!-- Content in the bottom row (Buttons Row) -->
+        <FlexLayout Grid.Row="1"
+                    Direction="Row"
+                    AlignItems="Start">
+
+            <Button Text="Home"
+        FlexLayout.Grow="1"
+        CornerRadius="0"
+        BorderWidth="1"
+        BorderColor="Gray"
+        BackgroundColor="#F0F0F0"
+        TextColor="Black"
+        VerticalOptions="Start" />
+
+            <Button Text="Stats"
+                    FlexLayout.Grow="1"
+                    CornerRadius="0"
+                    BorderWidth="0"
+
+                    BackgroundColor="Transparent"
+                    TextColor="Black"
+                    VerticalOptions="Start" />
+
+            <Button Text="Settings"
+                    FlexLayout.Grow="1"
+                    CornerRadius="0"
+                    BorderWidth="0"
+                    BackgroundColor="Transparent"
+                    TextColor="Black"
+                    VerticalOptions="Start" />
+        </FlexLayout>
+    </Grid>
 </ContentPage>

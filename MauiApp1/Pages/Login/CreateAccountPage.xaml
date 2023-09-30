@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sleepwise.Pages.Login.CreateAccountPage"
+             Title="LoginPage">
+    <ScrollView>
+        <FlexLayout
+            Direction="Column"
+            JustifyContent="SpaceEvenly"
+            AlignItems="Center">
+
+            <Image
+                Source="dragon.png"
+                WidthRequest="200"/>
+
+            <Label
+                Text="Create Account"
+                Style="{StaticResource HomeLabel}"/>
+
+            <VerticalStackLayout>
+                <Entry Text="{Binding Email}" Placeholder="Email" />
+                <Label Text="{Binding EmailValidator.ErrorText}" TextColor="Red" />
+                <Entry x:Name="PasswordEntryz"
+                   Placeholder="Password"
+                   IsPassword="True"
+                   Text="{Binding Password}">
+                </Entry>
+                <Entry x:Name="PasswordConfirmEntryz"
+                   Placeholder="Confirm Password"
+                   IsPassword="True"
+                   Text="{Binding PasswordConfirm}">
+                </Entry>
+                <Label Text="{Binding PasswordValidator.ErrorText}"
+                   TextColor="Red"
+                   IsVisible="{Binding PasswordValidator.ErrorText, Converter={StaticResource StringIsNotNullOrEmptyConverter}}">
+                </Label>
+
+
+
+
+                <Button
+            x:Name="ReturnButton"
+            Text="Return to Login"
+            HorizontalOptions="Center"
+            Clicked="ReturnButton_Clicked"/>
+                <Button
+            x:Name="CreateAccountButton"
+            Text="Create Account"
+            HorizontalOptions="Center"
+            Clicked="CreateAccountButton_Clicked"/>
+            <Label x:Name="UserExistsLabel"
+            Text="This user already exists"
+            TextColor="Red"
+            IsVisible="{Binding UserExistsMessageVisible}" />
+            </VerticalStackLayout>
+        </FlexLayout>
+    </ScrollView>
+</ContentPage>
+
+
+

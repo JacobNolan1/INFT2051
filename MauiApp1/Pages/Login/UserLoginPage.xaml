@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sleepwise.Pages.Login.UserLoginPage"
+             Title="UserLoginPage">
+    <ScrollView>
+        <FlexLayout
+            Direction="Column"
+            JustifyContent="SpaceEvenly"
+            AlignItems="Center">
+
+            <Image
+                Source="dragon.png"
+                WidthRequest="200"/>
+
+            <Label
+                Text="Login"
+                Style="{StaticResource HomeLabel}"/>
+
+            <VerticalStackLayout>
+
+                <Label
+                        Text="Email: "
+                        VerticalTextAlignment="Center"
+                        Style="{StaticResource FormLabel}"/>
+
+                <Entry
+                        x:Name="EmailEntry"
+                        Placeholder="Email"
+                        HorizontalOptions="Fill"/>
+
+                <Label
+                        Text="Password: "
+                        VerticalTextAlignment="Center"
+                        Style="{StaticResource FormLabel}"/>
+
+                <Entry
+                        x:Name="PasswordEntry"
+                        IsPassword="True"
+                        Placeholder="Password"/>
+
+                <HorizontalStackLayout>
+                    <Label
+                            Text="Remember Me: "
+                            VerticalTextAlignment="Center"
+                            Style="{StaticResource FormLabel}"/>
+
+                    <CheckBox
+                            x:Name="RememberMeCheckbox"/>
+                </HorizontalStackLayout>
+
+                <Button
+                    x:Name="LoginButton"
+                    Text="Login"
+                    HorizontalOptions="Center"
+                    Clicked="LoginButton_Clicked"/>
+                <Label x:Name="ErrorMessageLabel" Text="" TextColor="Red" IsVisible="false" />
+
+                <Button
+                    x:Name="CreateAccountButton"
+                    Text="Create Account"
+                    HorizontalOptions="Center"
+                    Clicked="CreateAccountButton_Clicked"/>
+            </VerticalStackLayout>
+        </FlexLayout>
+    </ScrollView>
+</ContentPage>

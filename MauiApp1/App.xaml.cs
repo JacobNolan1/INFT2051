@@ -13,7 +13,7 @@ public partial class App : Application
     public App()
 	{
 		InitializeComponent();
-        #if WINDOWS
+#if WINDOWS
                 Microsoft.Maui.Handlers.WindowHandler.Mapper.AppendToMapping(nameof(IWindow), (handler, view) =>
                 {
                     var mauiWindow = handler.VirtualView;
@@ -24,8 +24,11 @@ public partial class App : Application
                     AppWindow appWindow = Microsoft.UI.Windowing.AppWindow.GetFromWindowId(windowId);
                     appWindow.Resize(new SizeInt32(WindowWidth, WindowHeight));
                 });
-        #endif
+#endif
 
-        MainPage = new AppShell();
+        // MainPage = new MainPage();
+
+        var navigationPage = new NavigationPage(new MainNavigationPage());
+        MainPage = navigationPage;
 	}
 }

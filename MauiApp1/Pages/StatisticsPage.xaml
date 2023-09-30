@@ -1,0 +1,45 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pages="clr-namespace:Sleepwise.Pages"
+             x:Class="Sleepwise.Pages.StatisticsPage">
+
+    <VerticalStackLayout>
+        <FlexLayout Grid.Row="1"
+                    Direction="Row"
+                    AlignItems="Start">
+
+            <Button x:Name="HomeButton"
+        Text="Home"
+        FlexLayout.Grow="1"
+        CornerRadius="0"
+        BorderWidth="0"
+        BackgroundColor="Transparent"
+        TextColor="Black"
+        VerticalOptions="Start" Clicked="HomeButton_Clicked"/>
+
+            <Button x:Name="StatsButton"
+        Text="Stats"
+        FlexLayout.Grow="1"
+        CornerRadius="0"
+        BorderWidth="1"
+        BorderColor="Gray"
+        BackgroundColor="#F0F0F0"
+        TextColor="Black"
+        VerticalOptions="Start" Clicked="StatsButton_Clicked"/>
+
+            <Button x:Name="SettingsButton"
+        Text="Settings"
+        FlexLayout.Grow="1"
+        CornerRadius="0"
+        BorderWidth="0"
+        BackgroundColor="Transparent"
+        TextColor="Black"
+        VerticalOptions="Start" Clicked="SettingsButton_Clicked"/>
+
+        </FlexLayout>
+        <Label Text="Statistics"
+               HorizontalOptions="CenterAndExpand"
+                />
+    </VerticalStackLayout>
+</ContentPage>
+
