@@ -3,21 +3,162 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Sleepwise.Pages.Forms.DaySummary.DayInsightPage"
              xmlns:models="clr-namespace:Sleepwise.Models"
+             xmlns:utils="clr-namespace:Sleepwise.Utils"
              Title="DayInsightPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Day Insight Page"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-        <Button Text="" Clicked="HomeButton_Clicked">
-            <Button.ImageSource>
-                <FontImageSource FontFamily="FontAwesomeSolid" Glyph="{x:Static models:FontAwesomeIconsSolid.HouseChimneyWindow}"/>
-            </Button.ImageSource>
-        </Button>
-        <Button Text="" Clicked="BackButton_Clicked">
-            <Button.ImageSource>
-                <FontImageSource FontFamily="FontAwesomeSolid" Glyph="{x:Static models:FontAwesomeIconsSolid.ArrowLeft}"/>
-            </Button.ImageSource>
-        </Button>
-    </VerticalStackLayout>
+    <ContentPage.Resources>
+        <utils:RadioButtonValueConverter x:Key="RadioButtonValueConverter" />
+    </ContentPage.Resources>
+    <ScrollView>
+
+        <VerticalStackLayout>
+            <Label 
+                Text="Day Insight Page"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <Button Text="" Clicked="HomeButton_Clicked">
+                <Button.ImageSource>
+                    <FontImageSource FontFamily="FontAwesomeSolid" Glyph="{x:Static models:FontAwesomeIconsSolid.HouseChimneyWindow}"/>
+                </Button.ImageSource>
+            </Button>
+
+            <Button Text="" Clicked="BackButton_Clicked">
+                <Button.ImageSource>
+                    <FontImageSource FontFamily="FontAwesomeSolid" Glyph="{x:Static models:FontAwesomeIconsSolid.ArrowLeft}"/>
+                </Button.ImageSource>
+            </Button>
+
+            <!-- Exercise -->
+            <Border Margin="10" Stroke="Black" StrokeThickness="2" Background="pink" Padding="20">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="10,10,10,10" />
+                </Border.StrokeShape>
+                <VerticalStackLayout>
+                    <HorizontalStackLayout>
+                        <Label Text="Exercise" FontAttributes="Bold" Margin="0,0,5,0"/>
+                        <Image WidthRequest="20" HeightRequest="20">
+                            <Image.Source>
+                                <FontImageSource FontFamily="FontAwesomeSolid" Color="Black" Glyph="{x:Static models:FontAwesomeIconsSolid.PersonRunning}" />
+                            </Image.Source>
+                        </Image>
+                    </HorizontalStackLayout>
+                    <BoxView Color="Black" HeightRequest="1" HorizontalOptions="FillAndExpand" Margin="1,0" />
+<FlexLayout Direction="Row" Wrap="Wrap">
+    <RadioButton Content="None" IsChecked="{Binding ExerciseLevel, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter=None, Mode=TwoWay}" GroupName="ExerciseLevel" Value="None" />
+                        <RadioButton Content="Light" IsChecked="{Binding ExerciseLevel, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter=Light, Mode=TwoWay}" GroupName="ExerciseLevel" Value="Light" />
+                        <RadioButton Content="Moderate" IsChecked="{Binding ExerciseLevel, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter=Moderate, Mode=TwoWay}" GroupName="ExerciseLevel" Value="Moderate" />
+                        <RadioButton Content="Vigorous" IsChecked="{Binding ExerciseLevel, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter=Vigorous, Mode=TwoWay}" GroupName="ExerciseLevel" Value="Vigorous" />
+</FlexLayout>
+
+
+
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Food -->
+            <Border Margin="10" Stroke="Black" StrokeThickness="2" Background="pink" Padding="20">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="10,10,10,10" />
+                </Border.StrokeShape>
+                <VerticalStackLayout>
+                    <HorizontalStackLayout>
+                        <Label Text="Food" FontAttributes="Bold" Margin="0,0,5,0"/>
+                        <Image WidthRequest="20" HeightRequest="20">
+                            <Image.Source>
+                                <FontImageSource FontFamily="FontAwesomeSolid" Color="Black" Glyph="{x:Static models:FontAwesomeIconsSolid.BowlRice}" />
+                            </Image.Source>
+                        </Image>
+                    </HorizontalStackLayout>
+                    <BoxView Color="Black" HeightRequest="1" HorizontalOptions="FillAndExpand" Margin="1,0" />
+                    <FlexLayout Direction="Row" Wrap="Wrap" JustifyContent="Start" AlignItems="Start">
+                        <RadioButton Content="Homemade" IsChecked="{Binding Food, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter=Homemade}" GroupName="Food" Value="Homemade" />
+                        <RadioButton Content="Fast Food" IsChecked="{Binding Food, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter=FastFood}" GroupName="Food" Value="FastFood" />
+                        <RadioButton Content="Restaurant" IsChecked="{Binding Food, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter=Restaurant}" GroupName="Food" Value="Restaurant" />
+                        <RadioButton Content="Delivery" IsChecked="{Binding Food, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter=Delivery}" GroupName="Food" Value="Delivery" />
+
+                    </FlexLayout>
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Food Quality -->
+            <Border Margin="10" Stroke="Black" StrokeThickness="2" Background="pink" Padding="20">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="10,10,10,10" />
+                </Border.StrokeShape>
+                <VerticalStackLayout>
+                    <HorizontalStackLayout>
+                        <Label Text="Food Quality" FontAttributes="Bold" Margin="0,0,5,0"/>
+                        <Image WidthRequest="20" HeightRequest="20">
+                            <Image.Source>
+                                <FontImageSource FontFamily="FontAwesomeSolid" Color="Black" Glyph="{x:Static models:FontAwesomeIconsSolid.WheatAwn}" />
+                            </Image.Source>
+                        </Image>
+                    </HorizontalStackLayout>
+                    <BoxView Color="Black" HeightRequest="1" HorizontalOptions="FillAndExpand" Margin="1,0" />
+                    <FlexLayout Direction="Row" Wrap="Wrap" JustifyContent="Start" AlignItems="Start">
+                        <RadioButton Content="Poor" IsChecked="{Binding FoodQuality, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter=Poor}" GroupName="FoodQuality" Value="Poor" />
+                        <RadioButton Content="Good" IsChecked="{Binding FoodQuality, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter=Good}" GroupName="FoodQuality" Value="Good" />
+                        <RadioButton Content="Excellent" IsChecked="{Binding FoodQuality, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter=Excellent}" GroupName="FoodQuality" Value="Excellent" />
+                    </FlexLayout>
+                </VerticalStackLayout>
+            </Border>
+
+
+            <!-- Work -->
+            <Border Margin="10" Stroke="Black" StrokeThickness="2" Background="pink" Padding="20">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="10,10,10,10" />
+                </Border.StrokeShape>
+                <VerticalStackLayout>
+                    <HorizontalStackLayout>
+                        <Label Text="Work" FontAttributes="Bold" Margin="0,0,5,0"/>
+                        <Image WidthRequest="20" HeightRequest="20">
+                            <Image.Source>
+                                <FontImageSource FontFamily="FontAwesomeSolid" Color="Black" Glyph="{x:Static models:FontAwesomeIconsSolid.Briefcase}" />
+                            </Image.Source>
+                        </Image>
+                    </HorizontalStackLayout>
+                    <BoxView Color="Black" HeightRequest="1" HorizontalOptions="FillAndExpand" Margin="0,0,0,10" />
+                    <FlexLayout Direction="Row" Wrap="Wrap" JustifyContent="Start" AlignItems="Start">
+                        <RadioButton Content="No Work" IsChecked="{Binding Work, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter=NoWork}" GroupName="Work" Value="NoWork" />
+                        <RadioButton Content="On Time" IsChecked="{Binding Work, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter=OnTime}" GroupName="Work" Value="OnTime" />
+                        <RadioButton Content="Overtime" IsChecked="{Binding Work, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter=Overtime}" GroupName="Work" Value="Overtime" />
+                        <RadioButton Content="Sick Day" IsChecked="{Binding Work, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter=SickDay}" GroupName="Work" Value="SickDay" />
+                        <RadioButton Content="Vacation" IsChecked="{Binding Work, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter=Vacation}" GroupName="Work" Value="Vacation" />
+
+
+                    </FlexLayout>
+                </VerticalStackLayout>
+            </Border>
+
+
+
+            <!-- Work Experience -->
+            <Border Margin="10" Stroke="Black" StrokeThickness="2" Background="pink" Padding="20">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="10,10,10,10" />
+                </Border.StrokeShape>
+                <VerticalStackLayout>
+                    <HorizontalStackLayout>
+                        <Label Text="Work Experience" FontAttributes="Bold" Margin="0,0,5,0"/>
+                        <Image WidthRequest="20" HeightRequest="20">
+                            <Image.Source>
+                                <FontImageSource FontFamily="FontAwesomeSolid" Color="Black" Glyph="{x:Static models:FontAwesomeIconsSolid.UserTie}" />
+                            </Image.Source>
+                        </Image>
+                    </HorizontalStackLayout>
+                    <BoxView Color="Black" HeightRequest="1" HorizontalOptions="FillAndExpand" Margin="1,0" />
+                    <FlexLayout Direction="Row" Wrap="Wrap" JustifyContent="Start" AlignItems="Start">
+                        <RadioButton Content="Peaceful" IsChecked="{Binding WorkExperience, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter=Peaceful}" GroupName="WorkExperience" Value="Peaceful" />
+                        <RadioButton Content="Normal" IsChecked="{Binding WorkExperience, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter=Normal}" GroupName="WorkExperience" Value="Normal" />
+                        <RadioButton Content="Stressful" IsChecked="{Binding WorkExperience, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter=Stressful}" GroupName="WorkExperience" Value="Stressful" />
+                    </FlexLayout>
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Other Form Fields Go Here -->
+
+            <Button Text="Submit" Clicked="SubmitButton_Clicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

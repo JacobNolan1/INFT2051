@@ -43,10 +43,10 @@ namespace Sleepwise.ViewModels
                 connection.Delete(model);
             }
         }
-        public bool DoesUserCredentialsExistInDatabase(string email, string password)
+        public UserModel DoesUserCredentialsExistInDatabase(string email, string password)
         {
             var existingUser = connection.Table<UserModel>().FirstOrDefault(u => u.Email == email && u.Password == password);
-            return existingUser != null;
+            return existingUser;
         }
     }
 }

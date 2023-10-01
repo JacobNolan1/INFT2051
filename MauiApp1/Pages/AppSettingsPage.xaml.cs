@@ -15,6 +15,7 @@ public partial class AppSettingsPage : ContentPage
     private async void LogoutButton_Clicked(object sender, EventArgs e)
     {
         LoginPage.Token = null;
+        Preferences.Remove("user_id");
         await Navigation.PopToRootAsync();
         LoggedOut?.Invoke(this, EventArgs.Empty);
     }

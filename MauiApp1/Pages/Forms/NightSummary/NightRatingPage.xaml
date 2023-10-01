@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Sleepwise.Pages.Forms.NightSummary.NightRatingPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:models="clr-namespace:Sleepwise.Models"
+    Title="NightRatingPage">
+    <VerticalStackLayout>
+        <Label
+            HorizontalOptions="Center"
+            Text="Night Rating Page!"
+            VerticalOptions="Center" />
+        <Button Clicked="BackButton_Clicked" Text="">
+            <Button.ImageSource>
+                <FontImageSource FontFamily="FontAwesomeSolid" Glyph="{x:Static models:FontAwesomeIconsSolid.ArrowLeft}" />
+            </Button.ImageSource>
+        </Button>
+        <Border
+            Margin="10"
+            Padding="20"
+            Background="pink"
+            Stroke="Black"
+            StrokeThickness="4">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="10,10,10,10" />
+            </Border.StrokeShape>
+            <FlexLayout JustifyContent="SpaceBetween">
+                <ImageButton
+                    Clicked="ImageButton_Clicked"
+                    CommandParameter="sad_full"
+                    HeightRequest="50"
+                    Source="sad_full.png"
+                    WidthRequest="50" />
+                <ImageButton
+                    Clicked="ImageButton_Clicked"
+                    CommandParameter="sad"
+                    HeightRequest="50"
+                    Source="sad.png"
+                    WidthRequest="50" />
+                <ImageButton
+                    Clicked="ImageButton_Clicked"
+                    CommandParameter="meh"
+                    HeightRequest="50"
+                    Source="meh.png"
+                    WidthRequest="50" />
+                <ImageButton
+                    Clicked="ImageButton_Clicked"
+                    CommandParameter="happy"
+                    HeightRequest="50"
+                    Source="happy.png"
+                    WidthRequest="50" />
+                <ImageButton
+                    Clicked="ImageButton_Clicked"
+                    CommandParameter="happy_full"
+                    HeightRequest="50"
+                    Source="happy_full.png"
+                    WidthRequest="50" />
+            </FlexLayout>
+        </Border>
+    </VerticalStackLayout>
+</ContentPage>

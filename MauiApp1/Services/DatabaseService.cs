@@ -27,6 +27,8 @@ namespace Sleepwise.Services
         {
             get
             {
+                //DeleteDatabase();
+
                 if (_connection == null)
                 {
                     _connection = new SQLiteConnection(DatabaseFile);
@@ -36,9 +38,25 @@ namespace Sleepwise.Services
                     _connection.CreateTable<SummaryModel>();
                     _connection.CreateTable<SummaryTypeModel>();
                     _connection.CreateTable<UserModel>();
+                    _connection.CreateTable<DayInsightModel>();
+                    _connection.CreateTable<NightInsightModel>();
                 }
                 return _connection;
             }
+        }
+        public static void DeleteDatabase()
+        {
+            if (File.Exists(DatabaseFile))
+            {
+                _connection?.Close();
+                _connection = null;
+
+                File.Delete(DatabaseFile);
+            }
+        }
+        public static void InsertUser(UserModel user)
+        {
+            Connection.Insert(user);
         }
     }
 }

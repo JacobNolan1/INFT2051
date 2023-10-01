@@ -1,27 +1,46 @@
-namespace Sleepwise.Pages.Forms.DaySummary;
+using System;
+using Sleepwise.ViewModels;
 
-public partial class DayInsightPage : ContentPage
+namespace Sleepwise.Pages.Forms.DaySummary
 {
-	public DayInsightPage()
-	{
-        NavigationPage.SetHasNavigationBar(this, false);
-        NavigationPage.SetHasBackButton(this, false);
-        InitializeComponent();
-	}
-
-    private async void HomeButton_Clicked(object sender, EventArgs e)
+    public partial class DayInsightPage : ContentPage
     {
-        // Use Navigation property to access the NavigationPage and call PopRootAsync
-        if (Navigation is INavigation navigation)
+        public DayInsightPage()
         {
-            await navigation.PopToRootAsync();
+            NavigationPage.SetHasNavigationBar(this, false);
+            NavigationPage.SetHasBackButton(this, false);
+            InitializeComponent();
+            var viewModel = new DayInsightViewModel();
+            BindingContext = viewModel;
         }
-    }
-    private async void BackButton_Clicked(object sender, EventArgs e)
-    {
-        if (Navigation is INavigation navigation)
+
+        private async void HomeButton_Clicked(object sender, EventArgs e)
         {
-            await navigation.PopAsync();
+            if (Navigation is INavigation navigation)
+            {
+                await navigation.PopToRootAsync();
+            }
+        }
+
+        private async void BackButton_Clicked(object sender, EventArgs e)
+        {
+            if (Navigation is INavigation navigation)
+            {
+                await navigation.PopAsync();
+            }
+        }
+
+        private void SubmitButton_Clicked(object sender, EventArgs e)
+        {
+            if (BindingContext is DayInsightViewModel viewModel)
+            {
+                viewModel.SaveDayInsight();
+            }
+
+            if (Navigation is INavigation navigation)
+            {
+                navigation.PopToRootAsync();
+            }
         }
     }
 }

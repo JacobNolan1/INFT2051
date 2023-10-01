@@ -1,3 +1,4 @@
+using Sleepwise.Models;
 using Sleepwise.ViewModels;
 
 namespace Sleepwise.Pages.Login;
@@ -26,9 +27,11 @@ public partial class UserLoginPage : ContentPage
         string emailString = EmailEntry.Text;
         string passwordString = PasswordEntry.Text;
 
-        bool userCredentailsValid = viewModel.DoesUserCredentialsExistInDatabase(emailString, passwordString);
+        UserModel userModel = viewModel.DoesUserCredentialsExistInDatabase(emailString, passwordString);
+        bool userCredentailsValid = userModel != null;
         if (userCredentailsValid)
         {
+            Preferences.Set("user_id", userModel.Id);
             ErrorMessageLabel.IsVisible = false;
 
             if (RememberMeCheckbox.IsChecked)
@@ -62,6 +65,7 @@ public partial class UserLoginPage : ContentPage
         }
         else
         {
+            Preferences.Remove("user_id");
             ErrorMessageLabel.Text = "Invalid credentials. Please try again.";
             ErrorMessageLabel.IsVisible = true;
         }

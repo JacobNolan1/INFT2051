@@ -3,7 +3,7 @@ namespace Sleepwise.Pages.Login;
 
 using Sleepwise.ViewModels;
 using Sleepwise;
-
+using Sleepwise.Models;
 
 public partial class LoginPage : ContentPage
 {
@@ -31,9 +31,11 @@ public partial class LoginPage : ContentPage
         string emailString = EmailEntry.Text;
         string passwordString = PasswordEntry.Text;
 
-        bool userCredentailsValid = viewModel.DoesUserCredentialsExistInDatabase(emailString, passwordString);
+        UserModel userModel= viewModel.DoesUserCredentialsExistInDatabase(emailString, passwordString);
+        bool userCredentailsValid = userModel != null;
         if (userCredentailsValid)
         {
+            Preferences.Set("user_id", userModel.Id);
             ErrorMessageLabel.IsVisible = false;
 
             if (RememberMeCheckbox.IsChecked)
@@ -48,22 +50,11 @@ public partial class LoginPage : ContentPage
                 Preferences.Default.Remove(PASSWORD_KEY);
                 Preferences.Default.Remove(REMEMBER_ME_KEY);
             }
-
             Token = "justafaketoken";
 
-            Navigation.PopModalAsync();
-            var mainPage = Application.Current.MainPage as MainPage; // Assuming MainPage is your main TabbedPage
-            if (mainPage != null)
-            {
-                Dispatcher.Dispatch(async () =>
-                {
-                    await Task.Delay(10);
-                    //mainPage.CurrentPage = mainPage.Children[0];
-                }
-                );
-            }
         } else
         {
+            Preferences.Remove("user_id");
             ErrorMessageLabel.Text = "Invalid credentials. Please try again.";
             ErrorMessageLabel.IsVisible = true;
         }

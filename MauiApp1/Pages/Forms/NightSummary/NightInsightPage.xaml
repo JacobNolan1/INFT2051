@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Sleepwise.Pages.Forms.NightSummary.NightInsightPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Sleepwise.ViewModels"
+    xmlns:models="clr-namespace:Sleepwise.Models"
+    xmlns:utils="clr-namespace:Sleepwise.Utils"
+    Title="NightInsightPage">
+    <ContentPage.Resources>
+        <utils:RadioButtonValueConverter x:Key="RadioButtonValueConverter" />
+    </ContentPage.Resources>
+    <ScrollView>
+        <VerticalStackLayout>
+            <Button Clicked="HomeButton_Clicked" Text="">
+                <Button.ImageSource>
+                    <FontImageSource FontFamily="FontAwesomeSolid" Glyph="{x:Static models:FontAwesomeIconsSolid.HouseChimneyWindow}" />
+                </Button.ImageSource>
+            </Button>
+
+            <Button Clicked="BackButton_Clicked" Text="">
+                <Button.ImageSource>
+                    <FontImageSource FontFamily="FontAwesomeSolid" Glyph="{x:Static models:FontAwesomeIconsSolid.ArrowLeft}" />
+                </Button.ImageSource>
+            </Button>
+
+            <Label Text="{Binding SelectedNightInsight.SummaryDatetime, StringFormat='Date: {0:yyyy-MM-dd}'}" />
+            <Border
+                Margin="10"
+                Padding="20"
+                Background="pink"
+                Stroke="Black"
+                StrokeThickness="2">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="10,10,10,10" />
+                </Border.StrokeShape>
+                <VerticalStackLayout>
+                    <HorizontalStackLayout>
+                        <Label
+                            Margin="0,0,5,0"
+                            FontAttributes="Bold"
+                            Text="Sleep Duration" />
+                        <Image HeightRequest="20" WidthRequest="20">
+                            <Image.Source>
+                                <FontImageSource
+                                    FontFamily="FontAwesomeSolid"
+                                    Glyph="{x:Static models:FontAwesomeIconsSolid.Clock}"
+                                    Color="Black" />
+                            </Image.Source>
+                        </Image>
+                    </HorizontalStackLayout>
+                    <BoxView
+                        Margin="1,0"
+                        HeightRequest="1"
+                        HorizontalOptions="FillAndExpand"
+                        Color="Black" />
+                    <FlexLayout Direction="Row" Wrap="Wrap">
+                        <RadioButton
+                            Content="&lt;4 hours"
+                            GroupName="SleepDuration"
+                            IsChecked="{Binding SelectedNightInsight.SleepDuration, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='&lt;4hrs'}" />
+                        <RadioButton
+                            Content="&lt;6 hours"
+                            GroupName="SleepDuration"
+                            IsChecked="{Binding SelectedNightInsight.SleepDuration, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='&lt;6hrs'}" />
+                        <RadioButton
+                            Content="&lt;8 hours"
+                            GroupName="SleepDuration"
+                            IsChecked="{Binding SelectedNightInsight.SleepDuration, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='&lt;8hrs'}" />
+                        <RadioButton
+                            Content="&gt;8 hours"
+                            GroupName="SleepDuration"
+                            IsChecked="{Binding SelectedNightInsight.SleepDuration, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='&gt;8hrs'}" />
+                    </FlexLayout>
+                </VerticalStackLayout>
+            </Border>
+
+            <Border
+                Margin="10"
+                Padding="20"
+                Background="pink"
+                Stroke="Black"
+                StrokeThickness="2">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="10,10,10,10" />
+                </Border.StrokeShape>
+                <VerticalStackLayout>
+                    <HorizontalStackLayout>
+                        <Label
+                            Margin="0,0,5,0"
+                            FontAttributes="Bold"
+                            Text="Sleep Quality" />
+                        <Image HeightRequest="20" WidthRequest="20">
+                            <Image.Source>
+                                <FontImageSource
+                                    FontFamily="FontAwesomeSolid"
+                                    Glyph="{x:Static models:FontAwesomeIconsSolid.Bed}"
+                                    Color="Black" />
+                            </Image.Source>
+                        </Image>
+                    </HorizontalStackLayout>
+                    <BoxView
+                        Margin="1,0"
+                        HeightRequest="1"
+                        HorizontalOptions="FillAndExpand"
+                        Color="Black" />
+                    <FlexLayout Direction="Row" Wrap="Wrap">
+                        <RadioButton
+                            Content="Poor"
+                            GroupName="SleepQuality"
+                            IsChecked="{Binding SelectedNightInsight.SleepQuality, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Poor'}" />
+                        <RadioButton
+                            Content="Good"
+                            GroupName="SleepQuality"
+                            IsChecked="{Binding SelectedNightInsight.SleepQuality, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Good'}" />
+                        <RadioButton
+                            Content="Excellent"
+                            GroupName="SleepQuality"
+                            IsChecked="{Binding SelectedNightInsight.SleepQuality, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='&lt;8hrs'}" />
+                    </FlexLayout>
+                </VerticalStackLayout>
+            </Border>
+
+            <Border
+                Margin="10"
+                Padding="20"
+                Background="pink"
+                Stroke="Black"
+                StrokeThickness="2">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="10,10,10,10" />
+                </Border.StrokeShape>
+                <VerticalStackLayout>
+                    <HorizontalStackLayout>
+                        <Label
+                            Margin="0,0,5,0"
+                            FontAttributes="Bold"
+                            Text="Screens" />
+                        <Image HeightRequest="20" WidthRequest="20">
+                            <Image.Source>
+                                <FontImageSource
+                                    FontFamily="FontAwesomeSolid"
+                                    Glyph="{x:Static models:FontAwesomeIconsSolid.MobileScreen}"
+                                    Color="Black" />
+                            </Image.Source>
+                        </Image>
+                    </HorizontalStackLayout>
+                    <BoxView
+                        Margin="1,0"
+                        HeightRequest="1"
+                        HorizontalOptions="FillAndExpand"
+                        Color="Black" />
+                    <FlexLayout Direction="Row" Wrap="Wrap">
+                        <RadioButton
+                            Content="Before Bed"
+                            GroupName="Screens"
+                            IsChecked="{Binding SelectedNightInsight.Screens, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='BeforeBed'}" />
+                        <RadioButton
+                            Content="&lt;30min"
+                            GroupName="Screens"
+                            IsChecked="{Binding SelectedNightInsight.Screens, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='&lt;30min'}" />
+                        <RadioButton
+                            Content="&lt;1hr"
+                            GroupName="Screens"
+                            IsChecked="{Binding SelectedNightInsight.Screens, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='&lt;1hr'}" />
+                        <RadioButton
+                            Content="None"
+                            GroupName="Screens"
+                            IsChecked="{Binding SelectedNightInsight.Screens, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='None'}" />
+                    </FlexLayout>
+                </VerticalStackLayout>
+            </Border>
+
+            <Button Clicked="SubmitButton_Clicked" Text="Submit" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
