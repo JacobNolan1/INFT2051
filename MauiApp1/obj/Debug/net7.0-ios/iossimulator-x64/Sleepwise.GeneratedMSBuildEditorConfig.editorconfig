@@ -34,6 +34,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.AppSetting
 build_metadata.AdditionalFiles.TargetPath = Pages\AppSettingsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\AppSettingsPage.xaml
 
+[C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/DayInsightContainer.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.DayInsightContainer.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\DayInsightContainer.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\DayInsightContainer.xaml
+
 [C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/Forms/DaySummary/DayInsightPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.Forms.DaySummary.DayInsightPage.xaml
@@ -46,6 +52,18 @@ build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.Forms.DayS
 build_metadata.AdditionalFiles.TargetPath = Pages\Forms\DaySummary\DayRatingPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\Forms\DaySummary\DayRatingPage.xaml
 
+[C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/Forms/DaySummary/DayTimeInsightPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.Forms.DaySummary.DayTimeInsightPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Forms\DaySummary\DayTimeInsightPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Forms\DaySummary\DayTimeInsightPage.xaml
+
+[C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/Forms/DaySummary/DayTimeRatingPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.Forms.DaySummary.DayTimeRatingPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Forms\DaySummary\DayTimeRatingPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Forms\DaySummary\DayTimeRatingPage.xaml
+
 [C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/Forms/NightSummary/NightInsightPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.Forms.NightSummary.NightInsightPage.xaml
@@ -57,6 +75,12 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.Forms.NightSummary.NightRatingPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\Forms\NightSummary\NightRatingPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\Forms\NightSummary\NightRatingPage.xaml
+
+[C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/InsightContainer.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.InsightContainer.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\InsightContainer.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\InsightContainer.xaml
 
 [C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/Login/CreateAccountPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
@@ -87,6 +111,12 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.MainPage.OtherPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\MainPage\OtherPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\MainPage\OtherPage.xaml
+
+[C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/NightInsightContainer.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.NightInsightContainer.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\NightInsightContainer.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\NightInsightContainer.xaml
 
 [C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/Old/CardSummary.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

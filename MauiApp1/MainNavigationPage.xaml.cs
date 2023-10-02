@@ -5,12 +5,13 @@ using Sleepwise.Pages;
 using Sleepwise.Pages.Forms.DaySummary;
 using Sleepwise.Pages.Forms.NightSummary;
 using Sleepwise.Pages.Login;
+using Sleepwise.Utils;
 
 namespace Sleepwise
 {
     public partial class MainNavigationPage : ContentPage, INotifyPropertyChanged
     {
-        private DateTime selectedDate;
+        private DateTime selectedDate = DateTime.Now.Date;
 
 
         public DateTime SelectedDate
@@ -53,7 +54,7 @@ namespace Sleepwise
 
         private void DailySummaryButton_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new DayRatingPage(), false);
+            Navigation.PushAsync(new DayTimeRatingPage(SelectedDate), false);
         }
 
         private void NightSummaryButton_Clicked(object sender, EventArgs e)
@@ -79,11 +80,13 @@ namespace Sleepwise
         private void GoBackDateButton_Clicked(object sender, EventArgs e)
         {
             SelectedDate = SelectedDate.AddDays(-1);
+            MessagingCenter.Send(new StringMessage(), "GoBackDate");
         }
 
         private void GoToCurrentDateButton_Clicked(object sender, EventArgs e)
         {
             SelectedDate = DateTime.Now.Date;
+            MessagingCenter.Send(new StringMessage(), "GoCurrentDate");
         }
 
         private void GoForwardDateButton_Clicked(object sender, EventArgs e)
@@ -92,6 +95,7 @@ namespace Sleepwise
             if (tomorrow <= DateTime.Now.Date)
             {
                 SelectedDate = tomorrow;
+                MessagingCenter.Send(new StringMessage(), "GoForwardDate");
             }
         }
 

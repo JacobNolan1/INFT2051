@@ -10,6 +10,16 @@ namespace Sleepwise.Models
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
 
+
+        private string _summaryRating;
+        [MaxLength(20)]
+        public string SummaryRating
+        {
+            get { return _summaryRating; }
+            set { _summaryRating = value; }
+        }
+
+
         private string _sleepDuration;
         [MaxLength(20)]
         public string SleepDuration

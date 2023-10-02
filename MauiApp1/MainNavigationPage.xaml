@@ -79,5 +79,7 @@
             Clicked="NightSummaryButton_Clicked"
             HorizontalOptions="Center"
             Text="Night Summary" />
+        <pages:DayInsightContainer />
+        <pages:NightInsightContainer SelectedDate="{Binding SelectedDate}" />
     </VerticalStackLayout>
 </ContentPage>

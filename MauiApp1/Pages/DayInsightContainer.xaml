@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView
+    x:Class="Sleepwise.Pages.DayInsightContainer"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:models="clr-namespace:Sleepwise.Models">
+    <VerticalStackLayout>
+        <Border
+            Margin="10"
+            Padding="20"
+            Background="pink"
+            Stroke="Black"
+            StrokeThickness="2">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="10,10,10,10" />
+            </Border.StrokeShape>
+            <VerticalStackLayout>
+                <HorizontalStackLayout Spacing="10">
+
+                    <Border Background="Gray" Stroke="Gray">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="40,40,40,40" />
+                        </Border.StrokeShape>
+                        <Image HeightRequest="40" WidthRequest="40">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="DoSummaryButton_Tapped" />
+                            </Image.GestureRecognizers>
+                            <Image.Source>
+                                <FontImageSource
+                                    FontFamily="FontAwesomeSolid"
+                                    Glyph="{x:Static models:FontAwesomeIconsRegular.SquarePlus}"
+                                    Color="White" />
+                            </Image.Source>
+                        </Image>
+                    </Border>
+                    <BoxView
+                        HeightRequest="40"
+                        WidthRequest="2"
+                        Color="Gray" />
+                    <Label
+                        HorizontalOptions="Center"
+                        Text="Task: Complete Day Summary"
+                        VerticalOptions="Center" />
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </Border>
+        <Border
+            Margin="10"
+            Padding="20"
+            Background="pink"
+            Stroke="Black"
+            StrokeThickness="2">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="10,10,10,10" />
+            </Border.StrokeShape>
+            <VerticalStackLayout>
+                <HorizontalStackLayout Spacing="10">
+
+                    <Border Background="White" Stroke="Gray">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="40,40,40,40" />
+                        </Border.StrokeShape>
+                        <Image
+                            Margin="0,0,5,0"
+                            Aspect="AspectFill"
+                            HeightRequest="40"
+                            WidthRequest="40">
+                            <Image.Triggers>
+                                <DataTrigger
+                                    Binding="{Binding MoodImage}"
+                                    TargetType="Image"
+                                    Value="{x:Null}">
+                                    <Setter Property="IsVisible" Value="False" />
+                                </DataTrigger>
+                                <DataTrigger
+                                    Binding="{Binding MoodImage}"
+                                    TargetType="Image"
+                                    Value="">
+                                    <Setter Property="IsVisible" Value="False" />
+                                </DataTrigger>
+                            </Image.Triggers>
+                            <Image.Source>
+                                <Binding Path="MoodImage" />
+                            </Image.Source>
+                        </Image>
+
+                    </Border>
+                    <BoxView
+                        HeightRequest="40"
+                        WidthRequest="2"
+                        Color="Gray" />
+                    <Label
+                        HorizontalOptions="Center"
+                        Text="Day Summary"
+                        VerticalOptions="Center" />
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </Border>
+    </VerticalStackLayout>
+</ContentView>

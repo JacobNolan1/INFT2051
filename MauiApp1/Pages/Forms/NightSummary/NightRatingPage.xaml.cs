@@ -2,7 +2,7 @@ namespace Sleepwise.Pages.Forms.NightSummary;
 
 public partial class NightRatingPage : ContentPage
 {
-    public DateTime date;
+    public DateTime date { get; set; }
 	public NightRatingPage(DateTime? date = null)
 	{
         NavigationPage.SetHasNavigationBar(this, false);
@@ -15,6 +15,7 @@ public partial class NightRatingPage : ContentPage
         }
         this.date = (DateTime)date;
         int user_id = Preferences.Default.Get<int>("user_id", -1);
+        this.BindingContext = this;
     }
     private void ImageButton_Clicked(object sender, EventArgs e)
     {
