@@ -1,4 +1,5 @@
 using Sleepwise.Models;
+using Sleepwise.Pages.Breakdown;
 using Sleepwise.Pages.Forms.DaySummary;
 using Sleepwise.Services;
 using Sleepwise.Utils;
@@ -11,11 +12,43 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace Sleepwise.Pages
 {
     public partial class DayInsightContainer : ContentView, INotifyPropertyChanged
     {
+
+        private bool _isSummaryDone;
+
+        public bool IsSummaryDone
+        {
+            get { return _isSummaryDone; }
+            set
+            {
+                if (_isSummaryDone != value)
+                {
+                    _isSummaryDone = value;
+                    OnPropertyChanged(nameof(IsSummaryDone));
+                }
+            }
+        }
+        private bool _isSummaryNotDone;
+
+        public bool IsSummaryNotDone
+        {
+            get { return _isSummaryNotDone; }
+            set
+            {
+                if (_isSummaryNotDone != value)
+                {
+                    _isSummaryNotDone = value;
+                    OnPropertyChanged(nameof(IsSummaryNotDone));
+                }
+            }
+        }
+
+
 
         private string _rating;
 
@@ -118,16 +151,25 @@ namespace Sleepwise.Pages
         }
 
 
-        private void DoSummaryButton_Tapped(object sender, EventArgs e)
+
+
+    private void DoSummaryButton_Tapped(object sender, EventArgs e)
         {
             Navigation.PushAsync(new DayTimeRatingPage(SelectedDate), false);
         }
+        private void ViewHistory_Tapped(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new DayBreakdown(SelectedDate, user_id, Rating), false);
+        }
+
 
         public void ReloadDayInsight()
         {
             viewModel.LoadDayTimeInsightForDate(user_id, SelectedDate);
+            IsSummaryDone = viewModel.SelectedDayTimeInsight.IsCompleted;
+            IsSummaryNotDone = !IsSummaryDone;
             Rating = viewModel.SelectedDayTimeInsight.SummaryRating;
-            SetMoodImageFromRating("average");
+            SetMoodImageFromRating(Rating);
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

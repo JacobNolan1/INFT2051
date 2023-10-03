@@ -38,6 +38,18 @@ build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.AppSetting
 build_metadata.AdditionalFiles.TargetPath = Pages\AppSettingsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\AppSettingsPage.xaml
 
+[C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/Breakdown/DayBreakdown.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.Breakdown.DayBreakdown.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Breakdown\DayBreakdown.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Breakdown\DayBreakdown.xaml
+
+[C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/Breakdown/NightBreakdown.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.Breakdown.NightBreakdown.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Breakdown\NightBreakdown.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Breakdown\NightBreakdown.xaml
+
 [C:/Users/inft2051Student/Documents/Assignments/project/Sleepwise/MauiApp1/Pages/DayInsightContainer.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Sleepwise.Pages.DayInsightContainer.xaml

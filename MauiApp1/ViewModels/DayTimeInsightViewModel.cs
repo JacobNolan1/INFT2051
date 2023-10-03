@@ -66,7 +66,8 @@ namespace Sleepwise.ViewModels
                 SelectedDayTimeInsight = new DayTimeInsightModel
                 {
                     UserId = user_id,
-                    SummaryDatetime = date
+                    SummaryDatetime = date,
+                    IsCompleted = false,
                 };
             }
         }
@@ -75,6 +76,7 @@ namespace Sleepwise.ViewModels
 
         public void SaveDayTimeInsight(DayTimeInsightModel model)
         {
+            model.IsCompleted = true;
             if (model.Id > 0)
             {
                 _connection.Update(model);

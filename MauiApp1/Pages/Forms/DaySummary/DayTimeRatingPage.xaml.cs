@@ -27,11 +27,19 @@ public partial class DayTimeRatingPage : ContentPage
             }
         }
     }
-    private async void BackButton_Clicked(object sender, EventArgs e)
+    private void BackButton_Clicked(object sender, EventArgs e)
     {
         if (Navigation is INavigation navigation)
         {
-            await navigation.PopAsync();
+            navigation.PopAsync();
+        }
+    }
+
+    private void HomeButton_Clicked(object sender, EventArgs e)
+    {
+        if (Navigation is INavigation navigation)
+        {
+            navigation.PopToRootAsync();
         }
     }
 }

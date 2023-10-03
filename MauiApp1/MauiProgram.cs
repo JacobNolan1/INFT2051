@@ -17,9 +17,8 @@ public static class MauiProgram
                 fonts.AddFont("fa-solid-900.ttf", "FontAwesomeSolid");
                 fonts.AddFont("fa-brands-400.ttf", "FontAwesomeBrands");
             });
-
 #if DEBUG
-		builder.Logging.AddDebug();
+        builder.Logging.AddDebug();
 #endif
 
 		return builder.Build();

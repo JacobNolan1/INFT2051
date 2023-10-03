@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Sleepwise.Pages.Breakdown.NightBreakdown"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:models="clr-namespace:Sleepwise.Models"
+    Title="NightBreakdown">
+    <VerticalStackLayout>
+        <Button Clicked="BackButton_Clicked" Text="">
+            <Button.ImageSource>
+                <FontImageSource FontFamily="FontAwesomeSolid" Glyph="{x:Static models:FontAwesomeIconsSolid.ArrowLeft}" />
+            </Button.ImageSource>
+        </Button>
+        <Button Clicked="DoSummaryButton_Tapped" Text="Redo Summary">
+            <Button.ImageSource>
+                <FontImageSource FontFamily="FontAwesomeSolid" Glyph="{x:Static models:FontAwesomeIconsSolid.List}" />
+            </Button.ImageSource>
+        </Button>
+        <Border
+            Margin="10"
+            Padding="20"
+            Background="pink"
+            Stroke="Black"
+            StrokeThickness="2">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="10,10,10,10" />
+            </Border.StrokeShape>
+            <VerticalStackLayout>
+                <HorizontalStackLayout Spacing="10">
+
+                    <Border Background="White" Stroke="Gray">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="40,40,40,40" />
+                        </Border.StrokeShape>
+                        <Image
+                            Margin="0,0,5,0"
+                            Aspect="AspectFill"
+                            HeightRequest="40"
+                            WidthRequest="40">
+                            <Image.Triggers>
+                                <DataTrigger
+                                    Binding="{Binding MoodImage}"
+                                    TargetType="Image"
+                                    Value="{x:Null}">
+                                    <Setter Property="IsVisible" Value="False" />
+                                </DataTrigger>
+                                <DataTrigger
+                                    Binding="{Binding MoodImage}"
+                                    TargetType="Image"
+                                    Value="">
+                                    <Setter Property="IsVisible" Value="False" />
+                                </DataTrigger>
+                            </Image.Triggers>
+                            <Image.Source>
+                                <Binding Path="MoodImage" />
+                            </Image.Source>
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="DoSummaryButton_Tapped" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Border>
+                    <BoxView
+                        HeightRequest="40"
+                        WidthRequest="2"
+                        Color="Gray" />
+                    <Label
+                        HorizontalOptions="Center"
+                        Text="Night Summary"
+                        VerticalOptions="Center" />
+                </HorizontalStackLayout>
+                <BoxView
+                    BackgroundColor="Gray"
+                    HeightRequest="1"
+                    HorizontalOptions="FillAndExpand" />
+                <HorizontalStackLayout>
+                    <Label
+                        Margin="0,0,5,0"
+                        FontAttributes="Bold"
+                        Text="Sleep Duration" />
+                    <Image HeightRequest="20" WidthRequest="20">
+                        <Image.Source>
+                            <FontImageSource
+                                FontFamily="FontAwesomeSolid"
+                                Glyph="{x:Static models:FontAwesomeIconsSolid.Clock}"
+                                Color="Black" />
+                        </Image.Source>
+                    </Image>
+                    <Label Margin="0,0,5,5" Text="" />
+                    <Label Margin="0,0,0,0" Text="{Binding SelectedNightTimeInsight.SleepDuration}" />
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Label
+                        Margin="0,0,5,0"
+                        FontAttributes="Bold"
+                        Text="Sleep Quality" />
+                    <Image HeightRequest="20" WidthRequest="20">
+                        <Image.Source>
+                            <FontImageSource
+                                FontFamily="FontAwesomeSolid"
+                                Glyph="{x:Static models:FontAwesomeIconsSolid.Bed}"
+                                Color="Black" />
+                        </Image.Source>
+                    </Image>
+                    <Label Margin="0,0,5,5" Text="" />
+                    <Label Margin="0,0,0,0" Text="{Binding SelectedNightTimeInsight.SleepQuality}" />
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Label
+                        Margin="0,0,5,0"
+                        FontAttributes="Bold"
+                        Text="Screens" />
+                    <Image HeightRequest="20" WidthRequest="20">
+                        <Image.Source>
+                            <FontImageSource
+                                FontFamily="FontAwesomeSolid"
+                                Glyph="{x:Static models:FontAwesomeIconsSolid.MobileScreen}"
+                                Color="Black" />
+                        </Image.Source>
+                    </Image>
+                    <Label Margin="0,0,5,5" Text="" />
+                    <Label Margin="0,0,0,0" Text="{Binding SelectedNightTimeInsight.Screens}" />
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </Border>
+    </VerticalStackLayout>
+</ContentPage>

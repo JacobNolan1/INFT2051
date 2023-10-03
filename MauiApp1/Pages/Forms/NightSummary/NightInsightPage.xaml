@@ -6,7 +6,7 @@
     xmlns:local="clr-namespace:Sleepwise.ViewModels"
     xmlns:models="clr-namespace:Sleepwise.Models"
     xmlns:utils="clr-namespace:Sleepwise.Utils"
-    Title="NightInsightPage">
+    Title="NightTimeInsightPage">
     <ContentPage.Resources>
         <utils:RadioButtonValueConverter x:Key="RadioButtonValueConverter" />
     </ContentPage.Resources>
@@ -24,7 +24,7 @@
                 </Button.ImageSource>
             </Button>
 
-            <Label Text="{Binding SelectedNightInsight.SummaryDatetime, StringFormat='Date: {0:yyyy-MM-dd}'}" />
+            <Label Text="{Binding SelectedNightTimeInsight.SummaryDatetime, StringFormat='Date: {0:yyyy-MM-dd}'}" />
             <Border
                 Margin="10"
                 Padding="20"
@@ -58,22 +58,23 @@
                         <RadioButton
                             Content="&lt;4 hours"
                             GroupName="SleepDuration"
-                            IsChecked="{Binding SelectedNightInsight.SleepDuration, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='&lt;4hrs'}" />
+                            IsChecked="{Binding SelectedNightTimeInsight.SleepDuration, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='&lt;4hrs'}" />
                         <RadioButton
                             Content="&lt;6 hours"
                             GroupName="SleepDuration"
-                            IsChecked="{Binding SelectedNightInsight.SleepDuration, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='&lt;6hrs'}" />
+                            IsChecked="{Binding SelectedNightTimeInsight.SleepDuration, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='&lt;6hrs'}" />
                         <RadioButton
                             Content="&lt;8 hours"
                             GroupName="SleepDuration"
-                            IsChecked="{Binding SelectedNightInsight.SleepDuration, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='&lt;8hrs'}" />
+                            IsChecked="{Binding SelectedNightTimeInsight.SleepDuration, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='&lt;8hrs'}" />
                         <RadioButton
                             Content="&gt;8 hours"
                             GroupName="SleepDuration"
-                            IsChecked="{Binding SelectedNightInsight.SleepDuration, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='&gt;8hrs'}" />
+                            IsChecked="{Binding SelectedNightTimeInsight.SleepDuration, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='&gt;8hrs'}" />
                     </FlexLayout>
                 </VerticalStackLayout>
             </Border>
+
 
             <Border
                 Margin="10"
@@ -108,18 +109,25 @@
                         <RadioButton
                             Content="Poor"
                             GroupName="SleepQuality"
-                            IsChecked="{Binding SelectedNightInsight.SleepQuality, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Poor'}" />
+                            IsChecked="{Binding SelectedNightTimeInsight.SleepQuality, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Poor'}" />
+
                         <RadioButton
                             Content="Good"
                             GroupName="SleepQuality"
-                            IsChecked="{Binding SelectedNightInsight.SleepQuality, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Good'}" />
+                            IsChecked="{Binding SelectedNightTimeInsight.SleepQuality, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Good'}" />
                         <RadioButton
                             Content="Excellent"
                             GroupName="SleepQuality"
-                            IsChecked="{Binding SelectedNightInsight.SleepQuality, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='&lt;8hrs'}" />
+                            IsChecked="{Binding SelectedNightTimeInsight.SleepQuality, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Excellent'}" />
                     </FlexLayout>
                 </VerticalStackLayout>
             </Border>
+
+
+
+
+
+
 
             <Border
                 Margin="10"
@@ -154,22 +162,26 @@
                         <RadioButton
                             Content="Before Bed"
                             GroupName="Screens"
-                            IsChecked="{Binding SelectedNightInsight.Screens, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='BeforeBed'}" />
+                            IsChecked="{Binding SelectedNightTimeInsight.Screens, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='BeforeBed'}" />
                         <RadioButton
                             Content="&lt;30min"
                             GroupName="Screens"
-                            IsChecked="{Binding SelectedNightInsight.Screens, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='&lt;30min'}" />
+                            IsChecked="{Binding SelectedNightTimeInsight.Screens, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='&lt;30min'}" />
                         <RadioButton
                             Content="&lt;1hr"
                             GroupName="Screens"
-                            IsChecked="{Binding SelectedNightInsight.Screens, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='&lt;1hr'}" />
+                            IsChecked="{Binding SelectedNightTimeInsight.Screens, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='&lt;1hr'}" />
                         <RadioButton
                             Content="None"
                             GroupName="Screens"
-                            IsChecked="{Binding SelectedNightInsight.Screens, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='None'}" />
+                            IsChecked="{Binding SelectedNightTimeInsight.Screens, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='None'}" />
                     </FlexLayout>
                 </VerticalStackLayout>
             </Border>
+
+
+
+
 
             <Button Clicked="SubmitButton_Clicked" Text="Submit" />
         </VerticalStackLayout>

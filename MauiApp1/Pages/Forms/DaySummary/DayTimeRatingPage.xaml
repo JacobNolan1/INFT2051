@@ -10,9 +10,9 @@
             HorizontalOptions="Center"
             Text="Day Rating Page!"
             VerticalOptions="Center" />
-        <Button Clicked="BackButton_Clicked" Text="">
+        <Button Clicked="HomeButton_Clicked" Text="">
             <Button.ImageSource>
-                <FontImageSource FontFamily="FontAwesomeSolid" Glyph="{x:Static models:FontAwesomeIconsSolid.ArrowLeft}" />
+                <FontImageSource FontFamily="FontAwesomeSolid" Glyph="{x:Static models:FontAwesomeIconsSolid.HouseChimneyWindow}" />
             </Button.ImageSource>
         </Button>
         <Label Text="{Binding date, StringFormat='Date: {0:yyyy-MM-dd}'}" />

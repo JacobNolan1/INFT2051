@@ -58,19 +58,19 @@
                         <RadioButton
                             Content="None"
                             GroupName="Exercise"
-                            IsChecked="{Binding SelectedDayTimeInsight.Exercise, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='None'}" />
+                            IsChecked="{Binding SelectedDayTimeInsight.ExerciseLevel, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='None'}" />
                         <RadioButton
                             Content="Light"
                             GroupName="Exercise"
-                            IsChecked="{Binding SelectedDayTimeInsight.Exercise, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Light'}" />
+                            IsChecked="{Binding SelectedDayTimeInsight.ExerciseLevel, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Light'}" />
                         <RadioButton
                             Content="Moderate"
                             GroupName="Exercise"
-                            IsChecked="{Binding SelectedDayTimeInsight.Exercise, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Moderate'}" />
+                            IsChecked="{Binding SelectedDayTimeInsight.ExerciseLevel, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Moderate'}" />
                         <RadioButton
                             Content="Vigorous"
                             GroupName="Exercise"
-                            IsChecked="{Binding SelectedDayTimeInsight.Exercise, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Vigorous'}" />
+                            IsChecked="{Binding SelectedDayTimeInsight.ExerciseLevel, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Vigorous'}" />
                     </FlexLayout>
                 </VerticalStackLayout>
             </Border>
@@ -278,16 +278,16 @@
                         <RadioButton
                             Content="Peaceful"
                             GroupName="WorkExperience"
-                            IsChecked="{Binding SelectedDayTimeInsight.Work, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Peaceful'}" />
+                            IsChecked="{Binding SelectedDayTimeInsight.WorkExperience, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Peaceful'}" />
 
                         <RadioButton
                             Content="Normal"
                             GroupName="WorkExperience"
-                            IsChecked="{Binding SelectedDayTimeInsight.Work, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Normal'}" />
+                            IsChecked="{Binding SelectedDayTimeInsight.WorkExperience, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Normal'}" />
                         <RadioButton
                             Content="Stressful"
                             GroupName="WorkExperience"
-                            IsChecked="{Binding SelectedDayTimeInsight.Work, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Stressful'}" />
+                            IsChecked="{Binding SelectedDayTimeInsight.WorkExperience, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Stressful'}" />
                     </FlexLayout>
                 </VerticalStackLayout>
             </Border>

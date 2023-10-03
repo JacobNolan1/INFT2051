@@ -64,7 +64,8 @@ namespace Sleepwise.ViewModels
                 SelectedNightInsight = new NightInsightModel
                 {
                     UserId = user_id,
-                    SummaryDatetime = date
+                    SummaryDatetime = date,
+                    IsCompleted = false,
                 };
             }
         }
@@ -73,6 +74,7 @@ namespace Sleepwise.ViewModels
 
         public void SaveNightInsight(NightInsightModel model)
         {
+            model.IsCompleted = true;
             if (model.Id > 0)
             {
                  _connection.Update(model);

@@ -80,6 +80,6 @@
             HorizontalOptions="Center"
             Text="Night Summary" />
         <pages:DayInsightContainer />
-        <pages:NightInsightContainer SelectedDate="{Binding SelectedDate}" />
+        <pages:NightInsightContainer />
     </VerticalStackLayout>
 </ContentPage>

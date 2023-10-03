@@ -11,6 +11,14 @@ namespace Sleepwise.Models
         public int Id { get; set; }
 
 
+        private bool _isCompleted;
+        public bool IsCompleted
+        {
+            get { return _isCompleted; }
+            set { _isCompleted = value; }
+        }
+
+
         private string _summaryRating;
         [MaxLength(20)]
         public string SummaryRating

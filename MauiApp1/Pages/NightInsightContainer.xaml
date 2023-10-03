@@ -3,12 +3,14 @@
     x:Class="Sleepwise.Pages.NightInsightContainer"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:converters="clr-namespace:Sleepwise.Utils"
     xmlns:models="clr-namespace:Sleepwise.Models">
     <VerticalStackLayout>
         <Border
             Margin="10"
             Padding="20"
             Background="pink"
+            IsVisible="{Binding IsSummaryNotDone}"
             Stroke="Black"
             StrokeThickness="2">
             <Border.StrokeShape>
@@ -42,8 +44,81 @@
                         Text="Task: Complete Night Summary"
                         VerticalOptions="Center" />
                 </HorizontalStackLayout>
-
             </VerticalStackLayout>
         </Border>
+        <Border
+            Margin="10"
+            Padding="20"
+            Background="pink"
+            IsVisible="{Binding IsSummaryDone}"
+            Stroke="Black"
+            StrokeThickness="2">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="10,10,10,10" />
+            </Border.StrokeShape>
+            <VerticalStackLayout>
+                <HorizontalStackLayout Spacing="10">
+
+                    <Border Background="White" Stroke="Gray">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="40,40,40,40" />
+                        </Border.StrokeShape>
+                        <Image
+                            Margin="0,0,5,0"
+                            Aspect="AspectFill"
+                            HeightRequest="40"
+                            WidthRequest="40">
+                            <Image.Triggers>
+                                <DataTrigger
+                                    Binding="{Binding MoodImage}"
+                                    TargetType="Image"
+                                    Value="{x:Null}">
+                                    <Setter Property="IsVisible" Value="False" />
+                                </DataTrigger>
+                                <DataTrigger
+                                    Binding="{Binding MoodImage}"
+                                    TargetType="Image"
+                                    Value="">
+                                    <Setter Property="IsVisible" Value="False" />
+                                </DataTrigger>
+                            </Image.Triggers>
+                            <Image.Source>
+                                <Binding Path="MoodImage" />
+                            </Image.Source>
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="ViewHistory_Tapped" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Border>
+                    <BoxView
+                        HeightRequest="40"
+                        WidthRequest="2"
+                        Color="Gray" />
+                    <Label
+                        HorizontalOptions="Center"
+                        Text="Night Summary"
+                        VerticalOptions="Center" />
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </Border>
+        <Label Text="{Binding IsSummaryDone, StringFormat='IsSummaryDone: {0}'}" />
+
+        <Label>
+            <Label.Triggers>
+                <DataTrigger
+                    Binding="{Binding IsSummaryDone}"
+                    TargetType="Label"
+                    Value="True">
+                    <Setter Property="Text" Value="Completed" />
+                </DataTrigger>
+                <DataTrigger
+                    Binding="{Binding IsSummaryDone}"
+                    TargetType="Label"
+                    Value="False">
+                    <Setter Property="Text" Value="Not Completed" />
+                </DataTrigger>
+            </Label.Triggers>
+        </Label>
+
     </VerticalStackLayout>
 </ContentView>
