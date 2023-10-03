@@ -356,3 +356,6 @@ C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\bin\De
 C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.core.dll
 C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.provider.dynamic_cdecl.dll
 C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\e_sqlite3.dll
+C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Toolkit.Uwp.Notifications.dll
+C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Win32.SystemEvents.dll
+C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Drawing.Common.dll

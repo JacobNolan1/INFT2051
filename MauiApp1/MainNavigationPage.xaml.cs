@@ -5,6 +5,7 @@ using Sleepwise.Pages;
 using Sleepwise.Pages.Forms.DaySummary;
 using Sleepwise.Pages.Forms.NightSummary;
 using Sleepwise.Pages.Login;
+using Sleepwise.Services.PartialMethods;
 using Sleepwise.Utils;
 
 namespace Sleepwise
@@ -97,6 +98,8 @@ namespace Sleepwise
                 SelectedDate = tomorrow;
                 MessagingCenter.Send(new StringMessage(), "GoForwardDate");
             }
+            DateTime scheduleTime = DateTime.Now + new TimeSpan(0, 0, 1);
+            NotificationService.SendNotification("HELLO", "THIS IS A NOTIF", scheduleTime);
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
