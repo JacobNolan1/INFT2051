@@ -5,35 +5,66 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:models="clr-namespace:Sleepwise.Models"
     Title="NightBreakdown">
-    <VerticalStackLayout>
-        <Button Clicked="BackButton_Clicked" Text="">
-            <Button.ImageSource>
-                <FontImageSource FontFamily="FontAwesomeSolid" Glyph="{x:Static models:FontAwesomeIconsSolid.ArrowLeft}" />
-            </Button.ImageSource>
-        </Button>
-        <Button Clicked="DoSummaryButton_Tapped" Text="Redo Summary">
-            <Button.ImageSource>
-                <FontImageSource FontFamily="FontAwesomeSolid" Glyph="{x:Static models:FontAwesomeIconsSolid.List}" />
-            </Button.ImageSource>
-        </Button>
+    <VerticalStackLayout BackgroundColor="#181830">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button
+                Grid.Column="0"
+                Background="#372957"
+                Clicked="BackButton_Clicked"
+                CornerRadius="0"
+                Text="">
+                <Button.ImageSource>
+                    <FontImageSource FontFamily="FontAwesomeSolid" Glyph="{x:Static models:FontAwesomeIconsSolid.ArrowLeft}" />
+                </Button.ImageSource>
+            </Button>
+
+            <Button
+                Grid.Column="1"
+                Background="#372957"
+                Clicked="DoSummaryButton_Tapped"
+                CornerRadius="0"
+                Text="Redo Summary"
+                TextColor="White">
+                <Button.ImageSource>
+                    <FontImageSource FontFamily="FontAwesomeSolid" Glyph="{x:Static models:FontAwesomeIconsSolid.List}" />
+                </Button.ImageSource>
+            </Button>
+        </Grid>
+        <Label
+            x:Name="CurrentDateLabel"
+            Margin="0,10,0,20"
+            FontAttributes="Bold"
+            FontSize="20"
+            HorizontalOptions="Center"
+            Text="{Binding SelectedDate, StringFormat='{}{0:dd/MM/yyyy}'}"
+            TextColor="White" />
+
         <Border
             Margin="10"
             Padding="20"
-            Background="pink"
+            Background="#363659"
             Stroke="Black"
             StrokeThickness="2">
             <Border.StrokeShape>
                 <RoundRectangle CornerRadius="10,10,10,10" />
             </Border.StrokeShape>
+            <Border.GestureRecognizers>
+                <TapGestureRecognizer Tapped="DoSummaryButton_Tapped" />
+            </Border.GestureRecognizers>
             <VerticalStackLayout>
                 <HorizontalStackLayout Spacing="10">
 
-                    <Border Background="White" Stroke="Gray">
+                    <Border Background="#363659" Stroke="Gray">
                         <Border.StrokeShape>
                             <RoundRectangle CornerRadius="40,40,40,40" />
                         </Border.StrokeShape>
                         <Image
-                            Margin="0,0,5,0"
+                            Margin="0,0,0,0"
                             Aspect="AspectFill"
                             HeightRequest="40"
                             WidthRequest="40">
@@ -62,63 +93,86 @@
                     <BoxView
                         HeightRequest="40"
                         WidthRequest="2"
-                        Color="Gray" />
+                        Color="White" />
                     <Label
                         HorizontalOptions="Center"
                         Text="Night Summary"
+                        TextColor="White"
                         VerticalOptions="Center" />
                 </HorizontalStackLayout>
                 <BoxView
-                    BackgroundColor="Gray"
+                    Margin="0,4,0,5"
                     HeightRequest="1"
-                    HorizontalOptions="FillAndExpand" />
+                    HorizontalOptions="FillAndExpand"
+                    Color="White" />
                 <HorizontalStackLayout>
                     <Label
-                        Margin="0,0,5,0"
+                        Margin="0,0,0,0"
                         FontAttributes="Bold"
-                        Text="Sleep Duration" />
+                        Text="Sleep Duration"
+                        TextColor="White" />
                     <Image HeightRequest="20" WidthRequest="20">
                         <Image.Source>
                             <FontImageSource
                                 FontFamily="FontAwesomeSolid"
                                 Glyph="{x:Static models:FontAwesomeIconsSolid.Clock}"
-                                Color="Black" />
+                                Color="White" />
                         </Image.Source>
                     </Image>
-                    <Label Margin="0,0,5,5" Text="" />
-                    <Label Margin="0,0,0,0" Text="{Binding SelectedNightTimeInsight.SleepDuration}" />
+                    <Label
+                        Margin="0,0,5,5"
+                        Text=""
+                        TextColor="White" />
+                    <Label
+                        Margin="0,0,0,0"
+                        Text="{Binding SelectedNightTimeInsight.SleepDuration}"
+                        TextColor="White" />
                 </HorizontalStackLayout>
                 <HorizontalStackLayout>
                     <Label
                         Margin="0,0,5,0"
                         FontAttributes="Bold"
-                        Text="Sleep Quality" />
+                        Text="Sleep Quality"
+                        TextColor="White" />
                     <Image HeightRequest="20" WidthRequest="20">
                         <Image.Source>
                             <FontImageSource
                                 FontFamily="FontAwesomeSolid"
                                 Glyph="{x:Static models:FontAwesomeIconsSolid.Bed}"
-                                Color="Black" />
+                                Color="White" />
                         </Image.Source>
                     </Image>
-                    <Label Margin="0,0,5,5" Text="" />
-                    <Label Margin="0,0,0,0" Text="{Binding SelectedNightTimeInsight.SleepQuality}" />
+                    <Label
+                        Margin="0,0,5,5"
+                        Text=""
+                        TextColor="White" />
+                    <Label
+                        Margin="0,0,0,0"
+                        Text="{Binding SelectedNightTimeInsight.SleepQuality}"
+                        TextColor="White" />
                 </HorizontalStackLayout>
                 <HorizontalStackLayout>
                     <Label
                         Margin="0,0,5,0"
                         FontAttributes="Bold"
-                        Text="Screens" />
+                        Text="Screens"
+                        TextColor="White" />
                     <Image HeightRequest="20" WidthRequest="20">
                         <Image.Source>
                             <FontImageSource
                                 FontFamily="FontAwesomeSolid"
                                 Glyph="{x:Static models:FontAwesomeIconsSolid.MobileScreen}"
-                                Color="Black" />
+                                Color="White" />
                         </Image.Source>
                     </Image>
-                    <Label Margin="0,0,5,5" Text="" />
-                    <Label Margin="0,0,0,0" Text="{Binding SelectedNightTimeInsight.Screens}" />
+                    <Label
+                        Margin="0,0,5,5"
+                        Text=""
+                        TextColor="White" />
+                    <Label
+                        Margin="0,0,0,0"
+                        Text="{Binding SelectedNightTimeInsight.Screens}"
+                        TextColor="White" />
                 </HorizontalStackLayout>
             </VerticalStackLayout>
         </Border>

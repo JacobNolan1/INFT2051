@@ -42,6 +42,7 @@ namespace Sleepwise.Services
                     _connection.CreateTable<NightInsightModel>();
                     _connection.CreateTable<DayTimeInsightModel>();
                     _connection.CreateTable<NightTimeInsightModel>();
+                    _connection.CreateTable<SettingsModel>();
                 }
                 return _connection;
             }

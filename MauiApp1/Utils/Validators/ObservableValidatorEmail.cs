@@ -58,8 +58,7 @@ namespace Sleepwise.Utils.Validators
                 }
             }
 
-            // Add more validation rules as needed
-
+           
             ErrorText = string.Empty;
             IsValid = true;
             return true;
@@ -67,8 +66,6 @@ namespace Sleepwise.Utils.Validators
 
         private bool IsValidEmail(string email)
         {
-            // You can use a regex pattern for basic email format validation
-            // Customize this pattern as needed for your requirements
             string pattern = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
             return Regex.IsMatch(email, pattern);
         }

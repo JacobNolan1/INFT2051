@@ -1,67 +1,98 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Sleepwise.Pages.Login.UserLoginPage"
-             Title="UserLoginPage">
+<ContentPage
+    x:Class="Sleepwise.Pages.Login.UserLoginPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="UserLoginPage">
     <ScrollView>
-        <FlexLayout
-            Direction="Column"
-            JustifyContent="SpaceEvenly"
-            AlignItems="Center">
+        <Frame BackgroundColor="LightGray" CornerRadius="0">
+            <Frame.Background>
+                <RadialGradientBrush Center="1.0,1.0">
+                    <GradientStop Offset="0.1" Color="#181830" />
+                    <GradientStop Offset="1.0" Color="#181830" />
+                </RadialGradientBrush>
+            </Frame.Background>
+            <Frame.Content>
+                <FlexLayout
+                    AlignItems="Center"
+                    Direction="Column"
+                    JustifyContent="SpaceEvenly">
 
-            <Image
-                Source="dragon.png"
-                WidthRequest="200"/>
+                    <VerticalStackLayout>
+                        <Image
+                            HeightRequest="120"
+                            Source="sleepwise_owl_app.png"
+                            WidthRequest="120" />
 
-            <Label
-                Text="Login"
-                Style="{StaticResource HomeLabel}"/>
 
-            <VerticalStackLayout>
+                        <Label
+                            FontSize="45"
+                            Style="{StaticResource HomeLabel}"
+                            Text="Sleepwise"
+                            TextColor="White">
+                            <Label.FontFamily>
+                                <OnPlatform x:TypeArguments="x:String">
+                                    <On Platform="Windows" Value="monospace" />
+                                    <On Platform="Android" Value="monospace" />
+                                </OnPlatform>
+                            </Label.FontFamily>
 
-                <Label
-                        Text="Email: "
-                        VerticalTextAlignment="Center"
-                        Style="{StaticResource FormLabel}"/>
+                        </Label>
+                    </VerticalStackLayout>
 
-                <Entry
-                        x:Name="EmailEntry"
-                        Placeholder="Email"
-                        HorizontalOptions="Fill"/>
 
-                <Label
-                        Text="Password: "
-                        VerticalTextAlignment="Center"
-                        Style="{StaticResource FormLabel}"/>
 
-                <Entry
-                        x:Name="PasswordEntry"
-                        IsPassword="True"
-                        Placeholder="Password"/>
+                    <VerticalStackLayout>
 
-                <HorizontalStackLayout>
-                    <Label
-                            Text="Remember Me: "
-                            VerticalTextAlignment="Center"
-                            Style="{StaticResource FormLabel}"/>
+                        <Entry
+                            x:Name="EmailEntry"
+                            HorizontalOptions="Fill"
+                            Placeholder="Email"
+                            PlaceholderColor="Grey"
+                            Style="{StaticResource UserTextField}" />
 
-                    <CheckBox
-                            x:Name="RememberMeCheckbox"/>
-                </HorizontalStackLayout>
+                        <Entry
+                            x:Name="PasswordEntry"
+                            IsPassword="True"
+                            Placeholder="Password"
+                            PlaceholderColor="Grey"
+                            Style="{StaticResource UserTextField}" />
 
-                <Button
-                    x:Name="LoginButton"
-                    Text="Login"
-                    HorizontalOptions="Center"
-                    Clicked="LoginButton_Clicked"/>
-                <Label x:Name="ErrorMessageLabel" Text="" TextColor="Red" IsVisible="false" />
+                        <HorizontalStackLayout>
+                            <Label
+                                Style="{StaticResource FormLabel}"
+                                Text="Remember Me: "
+                                TextColor="White"
+                                VerticalTextAlignment="Center" />
 
-                <Button
-                    x:Name="CreateAccountButton"
-                    Text="Create Account"
-                    HorizontalOptions="Center"
-                    Clicked="CreateAccountButton_Clicked"/>
-            </VerticalStackLayout>
-        </FlexLayout>
+                            <CheckBox x:Name="RememberMeCheckbox" Color="#15316b" />
+                        </HorizontalStackLayout>
+
+                        <StackLayout Orientation="Vertical">
+                            <Button
+                                x:Name="LoginButton"
+                                Clicked="LoginButton_Clicked"
+                                Style="{StaticResource UserButton}"
+                                Text="Login" />
+
+                            <Label
+                                x:Name="ErrorMessageLabel"
+                                FontAttributes="Bold"
+                                IsVisible="false"
+                                Text=""
+                                TextColor="White" />
+
+                            <Button
+                                x:Name="CreateAccountButton"
+                                Clicked="CreateAccountButton_Clicked"
+                                Style="{StaticResource UserButton}"
+                                Text="Create Account" />
+                        </StackLayout>
+
+                    </VerticalStackLayout>
+                </FlexLayout>
+            </Frame.Content>
+
+        </Frame>
     </ScrollView>
 </ContentPage>

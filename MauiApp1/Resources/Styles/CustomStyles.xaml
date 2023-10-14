@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
     <Color x:Key="PrimaryButton">#333235</Color>
     <Color x:Key="LightText">#d9d8da</Color>
@@ -8,19 +7,116 @@
     <Style TargetType="Button">
         <Setter Property="TextColor" Value="{StaticResource LightText}" />
         <Setter Property="BackgroundColor" Value="{StaticResource PrimaryButton}" />
-        <Setter Property="FontFamily" Value="OpenSansRegular"/>
-        <Setter Property="CornerRadius" Value="10"/>
-        <Setter Property="Padding" Value="14,10"/>
+        <Setter Property="FontFamily" Value="OpenSansRegular" />
+        <Setter Property="CornerRadius" Value="10" />
+        <Setter Property="Padding" Value="14,10" />
     </Style>
 
-    <Style TargetType="Label" x:Key="HomeLabel">
+    <Style x:Key="HomeLabel" TargetType="Label">
         <Setter Property="TextColor" Value="{StaticResource PrimaryButton}" />
         <Setter Property="FontSize" Value="28" />
         <Setter Property="FontAttributes" Value="Bold" />
     </Style>
 
-    <Style TargetType="Label" x:Key="FormLabel">
+    <Style x:Key="FormLabel" TargetType="Label">
         <Setter Property="FontAttributes" Value="Bold" />
+    </Style>
+
+
+    <Color x:Key="PrimaryColor">#010820</Color>
+    <Color x:Key="SecondaryColor">#15316b</Color>
+
+    <Color x:Key="BorderColor">#E8E8E8</Color>
+
+
+    <Color x:Key="Light">#f6f8ff</Color>
+    <Color x:Key="Dark">#181830</Color>
+    <Color x:Key="DarkSecondary">#1e1e3b</Color>
+    <Color x:Key="DarkPurple">#363659</Color>
+
+
+
+    <Style x:Key="UserButton" TargetType="Button">
+        <Setter Property="TextColor" Value="{StaticResource Dark}" />
+        <Setter Property="BackgroundColor" Value="White" />
+        <Setter Property="Margin" Value="2" />
+    </Style>
+
+    <Style x:Key="UserTextField" TargetType="Entry">
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="BackgroundColor" Value="{StaticResource DarkSecondary}" />
+        <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+        <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+    </Style>
+
+
+
+    <Style x:Key="BorderBox" TargetType="Border">
+        <Setter Property="Margin" Value="10,5,10,0" />
+        <Setter Property="BackgroundColor" Value="{StaticResource BorderColor}" />
+        <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+        <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+    </Style>
+    <Style x:Key="FrameBox" TargetType="Frame">
+        <Setter Property="Margin" Value="10,5,10,0" />
+        <Setter Property="BackgroundColor" Value="{StaticResource BorderColor}" />
+        <Setter Property="BorderColor" Value="{StaticResource BorderColor}" />
+        <Setter Property="CornerRadius" Value="10" />
+        <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+        <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+    </Style>
+
+    <Style x:Key="FrameButton" TargetType="Button">
+        <Setter Property="Margin" Value="10,5,10,0" />
+        <Setter Property="Padding" Value="0,20,0,20" />
+        <Setter Property="BackgroundColor" Value="{StaticResource BorderColor}" />
+        <Setter Property="BorderColor" Value="{StaticResource BorderColor}" />
+        <Setter Property="CornerRadius" Value="10" />
+        <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+        <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+        <Setter Property="TextColor" Value="{StaticResource PrimaryColor}" />
+    </Style>
+
+    <Style x:Key="FrameButtonDark" TargetType="Button">
+        <Setter Property="Margin" Value="5,5,5,0" />
+        <Setter Property="Padding" Value="0,20,0,20" />
+        <Setter Property="BackgroundColor" Value="{StaticResource PrimaryColor}" />
+        <Setter Property="BorderColor" Value="{StaticResource PrimaryColor}" />
+        <Setter Property="BorderWidth" Value="0" />
+        <Setter Property="CornerRadius" Value="10" />
+        <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+        <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+        <Setter Property="TextColor" Value="{StaticResource BorderColor}" />
+    </Style>
+
+
+    <Style x:Key="CenteredLabel" TargetType="Label">
+        <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+        <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+        <Setter Property="TextColor" Value="{StaticResource PrimaryColor}" />
+    </Style>
+
+
+    <Style x:Key="DarkCheckBox" TargetType="CheckBox">
+        <Setter Property="Color" Value="{StaticResource PrimaryColor}" />
+        <Setter Property="BackgroundColor" Value="{StaticResource PrimaryColor}" />
+    </Style>
+
+
+
+    <Style x:Key="NavigationTopBarButton" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="{StaticResource Dark}" />
+        <Setter Property="BorderWidth" Value="0" />
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="CornerRadius" Value="0" />
+        <Setter Property="VerticalOptions" Value="Start" />
+    </Style>
+    <Style x:Key="NavigationTopBarButtonSelected" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="#372957" />
+        <Setter Property="BorderWidth" Value="0" />
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="CornerRadius" Value="0" />
+        <Setter Property="VerticalOptions" Value="Start" />
     </Style>
 
 

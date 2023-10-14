@@ -1,12 +1,13 @@
 using System;
 using System.ComponentModel;
-using Microsoft.Maui.Controls;
 using Sleepwise.Pages;
 using Sleepwise.Pages.Forms.DaySummary;
 using Sleepwise.Pages.Forms.NightSummary;
 using Sleepwise.Pages.Login;
+using Sleepwise.Services;
 using Sleepwise.Services.PartialMethods;
 using Sleepwise.Utils;
+using Sleepwise.ViewModels;
 
 namespace Sleepwise
 {
@@ -36,6 +37,20 @@ namespace Sleepwise
             SelectedDate = DateTime.Now.Date;
             InitializeComponent();
             this.BindingContext = this;
+            if (UserLoginPage.Token != null)
+            {
+                //ScheduleUpcomingNotificationsForUser();
+            }
+        }
+
+        public void ScheduleUpcomingNotificationsForUser()
+        {
+            SettingsViewModel a = new SettingsViewModel();
+            TimeSpan morningTime = new TimeSpan(8, 0, 0);
+            TimeSpan nightTime = new TimeSpan(20, 0, 0);
+            int daysScheduleAheadFor = 7;
+            NotificationService.ScheduleMorningAndNightNotifications(daysScheduleAheadFor, morningTime, nightTime);
+            NotificationService.GetScheduledToasts();
         }
 
         protected override void OnAppearing()
@@ -99,7 +114,6 @@ namespace Sleepwise
                 MessagingCenter.Send(new StringMessage(), "GoForwardDate");
             }
             DateTime scheduleTime = DateTime.Now + new TimeSpan(0, 0, 1);
-            NotificationService.SendNotification("HELLO", "THIS IS A NOTIF", scheduleTime);
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

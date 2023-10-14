@@ -7,7 +7,6 @@ public partial class NightRatingPage : ContentPage
 	{
         NavigationPage.SetHasNavigationBar(this, false);
         NavigationPage.SetHasBackButton(this, false);
-        InitializeComponent();
 
         if (date == null)
         {
@@ -15,7 +14,9 @@ public partial class NightRatingPage : ContentPage
         }
         this.date = (DateTime)date;
         int user_id = Preferences.Default.Get<int>("user_id", -1);
+        InitializeComponent();
         this.BindingContext = this;
+
     }
     private void ImageButton_Clicked(object sender, EventArgs e)
     {

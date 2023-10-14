@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-10-03T10:41:07.216</Modified>
+      <Modified>2023-10-19T07:03:59.788</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-10-03T10:41:06.260</Modified>
+      <Modified>2023-10-18T07:41:10.988</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Sleepwise.runtimeconfig.json">
       <PackagePath>Sleepwise.runtimeconfig.json</PackagePath>
-      <Modified>2023-10-03T10:41:05.562</Modified>
+      <Modified>2023-10-18T07:39:10.037</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Sleepwise.dll">
       <PackagePath>Sleepwise.dll</PackagePath>
-      <Modified>2023-10-03T10:40:56.797</Modified>
+      <Modified>2023-10-19T07:03:57.018</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Sleepwise.exe</PackagePath>
-      <Modified>2023-10-03T10:40:56.906</Modified>
+      <Modified>2023-10-19T07:03:57.091</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.7\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -955,7 +955,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Sleepwise.deps.json">
       <PackagePath>Sleepwise.deps.json</PackagePath>
-      <Modified>2023-10-03T10:41:06.908</Modified>
+      <Modified>2023-10-19T07:03:59.596</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.86\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
@@ -975,23 +975,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2023-08-21T11:18:30.251</Modified>
+      <Modified>2023-10-18T07:38:23.368</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2023-08-21T11:18:30.282</Modified>
+      <Modified>2023-10-18T07:38:23.388</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2023-08-21T11:18:30.324</Modified>
+      <Modified>2023-10-18T07:38:23.415</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2023-08-21T11:18:30.381</Modified>
+      <Modified>2023-10-18T07:38:23.459</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2023-08-21T11:18:30.598</Modified>
+      <Modified>2023-10-18T07:38:23.659</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\fa-brands-400.ttf">
       <PackagePath>fa-brands-400.ttf</PackagePath>
@@ -1015,307 +1015,235 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2023-09-12T06:59:41.367</Modified>
+      <Modified>2023-10-18T07:40:56.545</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.882</Modified>
+      <Modified>2023-10-18T07:40:57.037</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.898</Modified>
+      <Modified>2023-10-18T07:40:57.055</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.912</Modified>
+      <Modified>2023-10-18T07:40:57.071</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.934</Modified>
+      <Modified>2023-10-18T07:40:57.112</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2023-09-12T06:59:42.022</Modified>
+      <Modified>2023-10-18T07:40:57.216</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.493</Modified>
+      <Modified>2023-10-18T07:40:56.747</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.498</Modified>
+      <Modified>2023-10-18T07:40:56.753</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.518</Modified>
+      <Modified>2023-10-18T07:40:56.789</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.502</Modified>
+      <Modified>2023-10-18T07:40:56.768</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.507</Modified>
+      <Modified>2023-10-18T07:40:56.775</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.456</Modified>
+      <Modified>2023-10-18T07:40:56.700</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.462</Modified>
+      <Modified>2023-10-18T07:40:56.709</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.487</Modified>
+      <Modified>2023-10-18T07:40:56.740</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.470</Modified>
+      <Modified>2023-10-18T07:40:56.718</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.476</Modified>
+      <Modified>2023-10-18T07:40:56.725</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.385</Modified>
+      <Modified>2023-10-18T07:40:56.573</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.391</Modified>
+      <Modified>2023-10-18T07:40:56.581</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.397</Modified>
+      <Modified>2023-10-18T07:40:56.589</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.404</Modified>
+      <Modified>2023-10-18T07:40:56.597</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.413</Modified>
+      <Modified>2023-10-18T07:40:56.609</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.418</Modified>
+      <Modified>2023-10-18T07:40:56.617</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.426</Modified>
+      <Modified>2023-10-18T07:40:56.624</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.450</Modified>
+      <Modified>2023-10-18T07:40:56.677</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.431</Modified>
+      <Modified>2023-10-18T07:40:56.632</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.438</Modified>
+      <Modified>2023-10-18T07:40:56.643</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.590</Modified>
+      <Modified>2023-10-18T07:40:56.879</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.597</Modified>
+      <Modified>2023-10-18T07:40:56.890</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.606</Modified>
+      <Modified>2023-10-18T07:40:56.901</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.617</Modified>
+      <Modified>2023-10-18T07:40:56.915</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.696</Modified>
+      <Modified>2023-10-18T07:40:56.937</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.551</Modified>
+      <Modified>2023-10-18T07:40:56.834</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.556</Modified>
+      <Modified>2023-10-18T07:40:56.840</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.562</Modified>
+      <Modified>2023-10-18T07:40:56.846</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.569</Modified>
+      <Modified>2023-10-18T07:40:56.854</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.583</Modified>
+      <Modified>2023-10-18T07:40:56.866</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.523</Modified>
+      <Modified>2023-10-18T07:40:56.796</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.527</Modified>
+      <Modified>2023-10-18T07:40:56.803</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.532</Modified>
+      <Modified>2023-10-18T07:40:56.812</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.537</Modified>
+      <Modified>2023-10-18T07:40:56.818</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.544</Modified>
+      <Modified>2023-10-18T07:40:56.828</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.750</Modified>
+      <Modified>2023-10-18T07:40:56.946</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.786</Modified>
+      <Modified>2023-10-18T07:40:56.956</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.803</Modified>
+      <Modified>2023-10-18T07:40:56.968</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.825</Modified>
+      <Modified>2023-10-18T07:40:56.986</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.868</Modified>
+      <Modified>2023-10-18T07:40:57.025</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2023-09-12T06:59:40.973</Modified>
+      <Modified>2023-10-18T07:40:56.513</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2023-09-12T06:59:40.990</Modified>
+      <Modified>2023-10-18T07:40:56.532</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.024</Modified>
+      <Modified>2023-10-18T07:40:56.560</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.058</Modified>
+      <Modified>2023-10-18T07:40:56.597</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.133</Modified>
+      <Modified>2023-10-18T07:40:56.701</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\full_happy.scale-100.png">
+      <PackagePath>full_happy.scale-100.png</PackagePath>
+      <Modified>2023-10-18T07:32:48.565</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\happy.scale-100.png">
       <PackagePath>happy.scale-100.png</PackagePath>
-      <Modified>2023-08-22T12:09:11.705</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\happy.scale-125.png">
-      <PackagePath>happy.scale-125.png</PackagePath>
-      <Modified>2023-08-22T12:09:11.736</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\happy.scale-150.png">
-      <PackagePath>happy.scale-150.png</PackagePath>
-      <Modified>2023-08-22T12:09:11.783</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\happy.scale-200.png">
-      <PackagePath>happy.scale-200.png</PackagePath>
-      <Modified>2023-08-22T12:09:11.861</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\happy.scale-400.png">
-      <PackagePath>happy.scale-400.png</PackagePath>
-      <Modified>2023-08-22T12:09:12.096</Modified>
+      <Modified>2023-10-18T07:32:48.639</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\happy_full.scale-100.png">
       <PackagePath>happy_full.scale-100.png</PackagePath>
-      <Modified>2023-09-12T06:59:40.980</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\happy_full.scale-125.png">
-      <PackagePath>happy_full.scale-125.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.012</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\happy_full.scale-150.png">
-      <PackagePath>happy_full.scale-150.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.048</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\happy_full.scale-200.png">
-      <PackagePath>happy_full.scale-200.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.093</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\happy_full.scale-400.png">
-      <PackagePath>happy_full.scale-400.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.305</Modified>
+      <Modified>2023-10-18T07:32:48.565</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\meh.scale-100.png">
       <PackagePath>meh.scale-100.png</PackagePath>
-      <Modified>2023-09-12T06:59:40.974</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\meh.scale-125.png">
-      <PackagePath>meh.scale-125.png</PackagePath>
-      <Modified>2023-09-12T06:59:40.992</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\meh.scale-150.png">
-      <PackagePath>meh.scale-150.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.023</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\meh.scale-200.png">
-      <PackagePath>meh.scale-200.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.075</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\meh.scale-400.png">
-      <PackagePath>meh.scale-400.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.269</Modified>
+      <Modified>2023-10-18T07:32:48.675</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\sad.scale-100.png">
       <PackagePath>sad.scale-100.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.172</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\sad.scale-125.png">
-      <PackagePath>sad.scale-125.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.199</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\sad.scale-150.png">
-      <PackagePath>sad.scale-150.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.239</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\sad.scale-200.png">
-      <PackagePath>sad.scale-200.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.300</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\sad.scale-400.png">
-      <PackagePath>sad.scale-400.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.462</Modified>
+      <Modified>2023-10-18T07:32:48.722</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\sad_full.scale-100.png">
       <PackagePath>sad_full.scale-100.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.213</Modified>
+      <Modified>2023-10-18T07:32:48.604</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\sad_full.scale-125.png">
-      <PackagePath>sad_full.scale-125.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.247</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\sad_full.scale-150.png">
-      <PackagePath>sad_full.scale-150.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.283</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\sad_full.scale-200.png">
-      <PackagePath>sad_full.scale-200.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.344</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\sad_full.scale-400.png">
-      <PackagePath>sad_full.scale-400.png</PackagePath>
-      <Modified>2023-09-12T06:59:41.514</Modified>
+    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\sleepwise_owl_app.scale-100.png">
+      <PackagePath>sleepwise_owl_app.scale-100.png</PackagePath>
+      <Modified>2023-10-13T07:53:01.657</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

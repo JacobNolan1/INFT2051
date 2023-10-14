@@ -1,4 +1,5 @@
 using Sleepwise.Models;
+using Sleepwise.Services.PartialMethods;
 using Sleepwise.ViewModels;
 
 namespace Sleepwise.Pages.Login;
@@ -48,10 +49,10 @@ public partial class UserLoginPage : ContentPage
             }
 
             Token = "justafaketoken";
-
+            ScheduleUpcomingNotificationsForUser(userModel.Id);
             Navigation.PopAsync();
             /*
-            var mainPage = Application.Current.MainPage as MainPage; // Assuming MainPage is your main TabbedPage
+            var mainPage = Application.Current.MainPage as MainPage;
             if (mainPage != null)
             {
                 Dispatcher.Dispatch(async () =>
@@ -69,6 +70,16 @@ public partial class UserLoginPage : ContentPage
             ErrorMessageLabel.Text = "Invalid credentials. Please try again.";
             ErrorMessageLabel.IsVisible = true;
         }
+    }
+    public void ScheduleUpcomingNotificationsForUser(int userID)
+    {
+        SettingsViewModel settingsViewModel = new SettingsViewModel();
+        settingsViewModel.LoadUserSettings(userID);
+        TimeSpan morningTime = settingsViewModel.SelectedSettingsModel.DayNotificationTime;
+        TimeSpan nightTime = settingsViewModel.SelectedSettingsModel.NightNotificationTime;
+        int daysScheduleAheadFor = 7;
+        NotificationService.ScheduleMorningAndNightNotifications(daysScheduleAheadFor, morningTime, nightTime);
+        NotificationService.GetScheduledToasts();
     }
     private void CreateAccountButton_Clicked(object sender, EventArgs e)
     {

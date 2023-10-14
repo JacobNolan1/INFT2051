@@ -913,80 +913,26 @@
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\full_happy.scale-100.png">
+      <PackagePath>full_happy.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\happy.scale-100.png">
       <PackagePath>happy.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\happy.scale-125.png">
-      <PackagePath>happy.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\happy.scale-150.png">
-      <PackagePath>happy.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\happy.scale-200.png">
-      <PackagePath>happy.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\happy.scale-400.png">
-      <PackagePath>happy.scale-400.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\happy_full.scale-100.png">
       <PackagePath>happy_full.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\happy_full.scale-125.png">
-      <PackagePath>happy_full.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\happy_full.scale-150.png">
-      <PackagePath>happy_full.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\happy_full.scale-200.png">
-      <PackagePath>happy_full.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\happy_full.scale-400.png">
-      <PackagePath>happy_full.scale-400.png</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\meh.scale-100.png">
       <PackagePath>meh.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\meh.scale-125.png">
-      <PackagePath>meh.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\meh.scale-150.png">
-      <PackagePath>meh.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\meh.scale-200.png">
-      <PackagePath>meh.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\meh.scale-400.png">
-      <PackagePath>meh.scale-400.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\sad.scale-100.png">
       <PackagePath>sad.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\sad.scale-125.png">
-      <PackagePath>sad.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\sad.scale-150.png">
-      <PackagePath>sad.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\sad.scale-200.png">
-      <PackagePath>sad.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\sad.scale-400.png">
-      <PackagePath>sad.scale-400.png</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\sad_full.scale-100.png">
       <PackagePath>sad_full.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\sad_full.scale-125.png">
-      <PackagePath>sad_full.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\sad_full.scale-150.png">
-      <PackagePath>sad_full.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\sad_full.scale-200.png">
-      <PackagePath>sad_full.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\sad_full.scale-400.png">
-      <PackagePath>sad_full.scale-400.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\inft2051Student\Documents\Assignments\project\Sleepwise\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\sleepwise_owl_app.scale-100.png">
+      <PackagePath>sleepwise_owl_app.scale-100.png</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -14,7 +14,7 @@ public partial class DayRatingPage : ContentPage
         {
             if (imageButton.CommandParameter is string type)
             {
-                // Now you can use the 'type' variable in your logic
+              
                 Console.WriteLine($"Button clicked: {type}");
             }
             Navigation.PushAsync(new DayInsightPage());

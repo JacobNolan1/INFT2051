@@ -9,7 +9,7 @@
         <Border
             Margin="10"
             Padding="20"
-            Background="pink"
+            Background="#363659"
             IsVisible="{Binding IsSummaryNotDone}"
             Stroke="Black"
             StrokeThickness="2">
@@ -42,6 +42,7 @@
                     <Label
                         HorizontalOptions="Center"
                         Text="Task: Complete Night Summary"
+                        TextColor="White"
                         VerticalOptions="Center" />
                 </HorizontalStackLayout>
             </VerticalStackLayout>
@@ -49,22 +50,25 @@
         <Border
             Margin="10"
             Padding="20"
-            Background="pink"
+            Background="#363659"
             IsVisible="{Binding IsSummaryDone}"
             Stroke="Black"
             StrokeThickness="2">
             <Border.StrokeShape>
                 <RoundRectangle CornerRadius="10,10,10,10" />
             </Border.StrokeShape>
+            <Border.GestureRecognizers>
+                <TapGestureRecognizer Tapped="ViewHistory_Tapped" />
+            </Border.GestureRecognizers>
             <VerticalStackLayout>
                 <HorizontalStackLayout Spacing="10">
 
-                    <Border Background="White" Stroke="Gray">
+                    <Border Background="#363659" Stroke="Gray">
                         <Border.StrokeShape>
                             <RoundRectangle CornerRadius="40,40,40,40" />
                         </Border.StrokeShape>
                         <Image
-                            Margin="0,0,5,0"
+                            Margin="0,0,0,0"
                             Aspect="AspectFill"
                             HeightRequest="40"
                             WidthRequest="40">
@@ -97,28 +101,11 @@
                     <Label
                         HorizontalOptions="Center"
                         Text="Night Summary"
+                        TextColor="White"
                         VerticalOptions="Center" />
                 </HorizontalStackLayout>
             </VerticalStackLayout>
         </Border>
-        <Label Text="{Binding IsSummaryDone, StringFormat='IsSummaryDone: {0}'}" />
-
-        <Label>
-            <Label.Triggers>
-                <DataTrigger
-                    Binding="{Binding IsSummaryDone}"
-                    TargetType="Label"
-                    Value="True">
-                    <Setter Property="Text" Value="Completed" />
-                </DataTrigger>
-                <DataTrigger
-                    Binding="{Binding IsSummaryDone}"
-                    TargetType="Label"
-                    Value="False">
-                    <Setter Property="Text" Value="Not Completed" />
-                </DataTrigger>
-            </Label.Triggers>
-        </Label>
 
     </VerticalStackLayout>
 </ContentView>

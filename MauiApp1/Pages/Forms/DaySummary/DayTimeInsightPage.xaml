@@ -11,24 +11,55 @@
         <utils:RadioButtonValueConverter x:Key="RadioButtonValueConverter" />
     </ContentPage.Resources>
     <ScrollView>
-        <VerticalStackLayout>
-            <Button Clicked="HomeButton_Clicked" Text="">
-                <Button.ImageSource>
-                    <FontImageSource FontFamily="FontAwesomeSolid" Glyph="{x:Static models:FontAwesomeIconsSolid.HouseChimneyWindow}" />
-                </Button.ImageSource>
-            </Button>
+        <VerticalStackLayout BackgroundColor="#181830">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
 
-            <Button Clicked="BackButton_Clicked" Text="">
-                <Button.ImageSource>
-                    <FontImageSource FontFamily="FontAwesomeSolid" Glyph="{x:Static models:FontAwesomeIconsSolid.ArrowLeft}" />
-                </Button.ImageSource>
-            </Button>
+                <Button
+                    Grid.Column="0"
+                    Background="#372957"
+                    Clicked="HomeButton_Clicked"
+                    CornerRadius="0"
+                    Text="">
+                    <Button.ImageSource>
+                        <FontImageSource FontFamily="FontAwesomeSolid" Glyph="{x:Static models:FontAwesomeIconsSolid.HouseChimneyWindow}" />
+                    </Button.ImageSource>
+                </Button>
 
-            <Label Text="{Binding SelectedDayTimeInsight.SummaryDatetime, StringFormat='Date: {0:yyyy-MM-dd}'}" />
+                <Button
+                    Grid.Column="1"
+                    Background="#372957"
+                    Clicked="BackButton_Clicked"
+                    CornerRadius="0"
+                    TextColor="White">
+                    <Button.ImageSource>
+                        <FontImageSource FontFamily="FontAwesomeSolid" Glyph="{x:Static models:FontAwesomeIconsSolid.ArrowLeft}" />
+                    </Button.ImageSource>
+                </Button>
+            </Grid>
+
+
+            <Label
+                Margin="0,10,0,0"
+                FontAttributes="Bold"
+                FontSize="20"
+                HorizontalOptions="Center"
+                Text="{Binding SelectedDayTimeInsight.SummaryDatetime, StringFormat='Date: {0:yyyy-MM-dd}'}"
+                TextColor="White" />
+            <Label
+                Margin="0,20,0,0"
+                FontAttributes="Bold"
+                FontSize="16"
+                HorizontalOptions="Center"
+                Text="Select insights regarding your day"
+                TextColor="White" />
             <Border
                 Margin="10"
                 Padding="20"
-                Background="pink"
+                BackgroundColor="#363659"
                 Stroke="Black"
                 StrokeThickness="2">
                 <Border.StrokeShape>
@@ -39,13 +70,14 @@
                         <Label
                             Margin="0,0,5,0"
                             FontAttributes="Bold"
-                            Text="Exercise" />
+                            Text="Exercise"
+                            TextColor="White" />
                         <Image HeightRequest="20" WidthRequest="20">
                             <Image.Source>
                                 <FontImageSource
                                     FontFamily="FontAwesomeSolid"
                                     Glyph="{x:Static models:FontAwesomeIconsSolid.PersonRunning}"
-                                    Color="Black" />
+                                    Color="White" />
                             </Image.Source>
                         </Image>
                     </HorizontalStackLayout>
@@ -53,24 +85,28 @@
                         Margin="1,0"
                         HeightRequest="1"
                         HorizontalOptions="FillAndExpand"
-                        Color="Black" />
+                        Color="White" />
                     <FlexLayout Direction="Row" Wrap="Wrap">
                         <RadioButton
                             Content="None"
                             GroupName="Exercise"
-                            IsChecked="{Binding SelectedDayTimeInsight.ExerciseLevel, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='None'}" />
+                            IsChecked="{Binding SelectedDayTimeInsight.ExerciseLevel, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='None'}"
+                            TextColor="White" />
                         <RadioButton
                             Content="Light"
                             GroupName="Exercise"
-                            IsChecked="{Binding SelectedDayTimeInsight.ExerciseLevel, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Light'}" />
+                            IsChecked="{Binding SelectedDayTimeInsight.ExerciseLevel, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Light'}"
+                            TextColor="White" />
                         <RadioButton
                             Content="Moderate"
                             GroupName="Exercise"
-                            IsChecked="{Binding SelectedDayTimeInsight.ExerciseLevel, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Moderate'}" />
+                            IsChecked="{Binding SelectedDayTimeInsight.ExerciseLevel, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Moderate'}"
+                            TextColor="White" />
                         <RadioButton
                             Content="Vigorous"
                             GroupName="Exercise"
-                            IsChecked="{Binding SelectedDayTimeInsight.ExerciseLevel, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Vigorous'}" />
+                            IsChecked="{Binding SelectedDayTimeInsight.ExerciseLevel, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Vigorous'}"
+                            TextColor="White" />
                     </FlexLayout>
                 </VerticalStackLayout>
             </Border>
@@ -79,7 +115,7 @@
             <Border
                 Margin="10"
                 Padding="20"
-                Background="pink"
+                BackgroundColor="#363659"
                 Stroke="Black"
                 StrokeThickness="2">
                 <Border.StrokeShape>
@@ -90,13 +126,14 @@
                         <Label
                             Margin="0,0,5,0"
                             FontAttributes="Bold"
-                            Text="Food" />
+                            Text="Food"
+                            TextColor="White" />
                         <Image HeightRequest="20" WidthRequest="20">
                             <Image.Source>
                                 <FontImageSource
                                     FontFamily="FontAwesomeSolid"
                                     Glyph="{x:Static models:FontAwesomeIconsSolid.BowlRice}"
-                                    Color="Black" />
+                                    Color="White" />
                             </Image.Source>
                         </Image>
                     </HorizontalStackLayout>
@@ -104,29 +141,34 @@
                         Margin="1,0"
                         HeightRequest="1"
                         HorizontalOptions="FillAndExpand"
-                        Color="Black" />
+                        Color="White" />
                     <FlexLayout Direction="Row" Wrap="Wrap">
                         <RadioButton
                             Content="None"
                             GroupName="Food"
-                            IsChecked="{Binding SelectedDayTimeInsight.Food, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='None'}" />
+                            IsChecked="{Binding SelectedDayTimeInsight.Food, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='None'}"
+                            TextColor="White" />
 
                         <RadioButton
                             Content="Homemade"
                             GroupName="Food"
-                            IsChecked="{Binding SelectedDayTimeInsight.Food, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Homemade'}" />
+                            IsChecked="{Binding SelectedDayTimeInsight.Food, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Homemade'}"
+                            TextColor="White" />
                         <RadioButton
                             Content="Fast Food"
                             GroupName="Food"
-                            IsChecked="{Binding SelectedDayTimeInsight.Food, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='FastFood'}" />
+                            IsChecked="{Binding SelectedDayTimeInsight.Food, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='FastFood'}"
+                            TextColor="White" />
                         <RadioButton
                             Content="Restaurant"
                             GroupName="Food"
-                            IsChecked="{Binding SelectedDayTimeInsight.Food, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Restaurant'}" />
+                            IsChecked="{Binding SelectedDayTimeInsight.Food, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Restaurant'}"
+                            TextColor="White" />
                         <RadioButton
                             Content="Delivery"
                             GroupName="Food"
-                            IsChecked="{Binding SelectedDayTimeInsight.Food, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Delivery'}" />
+                            IsChecked="{Binding SelectedDayTimeInsight.Food, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Delivery'}"
+                            TextColor="White" />
                     </FlexLayout>
                 </VerticalStackLayout>
             </Border>
@@ -140,7 +182,7 @@
             <Border
                 Margin="10"
                 Padding="20"
-                Background="pink"
+                BackgroundColor="#363659"
                 Stroke="Black"
                 StrokeThickness="2">
                 <Border.StrokeShape>
@@ -151,13 +193,14 @@
                         <Label
                             Margin="0,0,5,0"
                             FontAttributes="Bold"
-                            Text="Food Quality" />
+                            Text="Food Quality"
+                            TextColor="White" />
                         <Image HeightRequest="20" WidthRequest="20">
                             <Image.Source>
                                 <FontImageSource
                                     FontFamily="FontAwesomeSolid"
                                     Glyph="{x:Static models:FontAwesomeIconsSolid.WheatAwn}"
-                                    Color="Black" />
+                                    Color="White" />
                             </Image.Source>
                         </Image>
                     </HorizontalStackLayout>
@@ -165,21 +208,24 @@
                         Margin="1,0"
                         HeightRequest="1"
                         HorizontalOptions="FillAndExpand"
-                        Color="Black" />
+                        Color="White" />
                     <FlexLayout Direction="Row" Wrap="Wrap">
                         <RadioButton
                             Content="Poor"
                             GroupName="FoodQuality"
-                            IsChecked="{Binding SelectedDayTimeInsight.FoodQuality, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Poor'}" />
+                            IsChecked="{Binding SelectedDayTimeInsight.FoodQuality, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Poor'}"
+                            TextColor="White" />
 
                         <RadioButton
                             Content="Good"
                             GroupName="FoodQuality"
-                            IsChecked="{Binding SelectedDayTimeInsight.FoodQuality, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Good'}" />
+                            IsChecked="{Binding SelectedDayTimeInsight.FoodQuality, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Good'}"
+                            TextColor="White" />
                         <RadioButton
                             Content="Excellent"
                             GroupName="FoodQuality"
-                            IsChecked="{Binding SelectedDayTimeInsight.FoodQuality, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Excellent'}" />
+                            IsChecked="{Binding SelectedDayTimeInsight.FoodQuality, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Excellent'}"
+                            TextColor="White" />
                     </FlexLayout>
                 </VerticalStackLayout>
             </Border>
@@ -191,7 +237,7 @@
             <Border
                 Margin="10"
                 Padding="20"
-                Background="pink"
+                BackgroundColor="#363659"
                 Stroke="Black"
                 StrokeThickness="2">
                 <Border.StrokeShape>
@@ -202,13 +248,14 @@
                         <Label
                             Margin="0,0,5,0"
                             FontAttributes="Bold"
-                            Text="Work" />
+                            Text="Work"
+                            TextColor="White" />
                         <Image HeightRequest="20" WidthRequest="20">
                             <Image.Source>
                                 <FontImageSource
                                     FontFamily="FontAwesomeSolid"
                                     Glyph="{x:Static models:FontAwesomeIconsSolid.Briefcase}"
-                                    Color="Black" />
+                                    Color="White" />
                             </Image.Source>
                         </Image>
                     </HorizontalStackLayout>
@@ -216,29 +263,34 @@
                         Margin="1,0"
                         HeightRequest="1"
                         HorizontalOptions="FillAndExpand"
-                        Color="Black" />
+                        Color="White" />
                     <FlexLayout Direction="Row" Wrap="Wrap">
                         <RadioButton
                             Content="No Work"
                             GroupName="Work"
-                            IsChecked="{Binding SelectedDayTimeInsight.Work, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='No Work'}" />
+                            IsChecked="{Binding SelectedDayTimeInsight.Work, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='No Work'}"
+                            TextColor="White" />
 
                         <RadioButton
                             Content="On Time"
                             GroupName="Work"
-                            IsChecked="{Binding SelectedDayTimeInsight.Work, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='On Time'}" />
+                            IsChecked="{Binding SelectedDayTimeInsight.Work, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='On Time'}"
+                            TextColor="White" />
                         <RadioButton
                             Content="Overtime"
                             GroupName="Work"
-                            IsChecked="{Binding SelectedDayTimeInsight.Work, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Overtime'}" />
+                            IsChecked="{Binding SelectedDayTimeInsight.Work, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Overtime'}"
+                            TextColor="White" />
                         <RadioButton
                             Content="Sick Day"
                             GroupName="Work"
-                            IsChecked="{Binding SelectedDayTimeInsight.Work, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Sick Day'}" />
+                            IsChecked="{Binding SelectedDayTimeInsight.Work, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Sick Day'}"
+                            TextColor="White" />
                         <RadioButton
                             Content="Vacation"
                             GroupName="Work"
-                            IsChecked="{Binding SelectedDayTimeInsight.Work, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Vacation'}" />
+                            IsChecked="{Binding SelectedDayTimeInsight.Work, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Vacation'}"
+                            TextColor="White" />
 
                     </FlexLayout>
                 </VerticalStackLayout>
@@ -248,7 +300,7 @@
             <Border
                 Margin="10"
                 Padding="20"
-                Background="pink"
+                BackgroundColor="#363659"
                 Stroke="Black"
                 StrokeThickness="2">
                 <Border.StrokeShape>
@@ -259,13 +311,14 @@
                         <Label
                             Margin="0,0,5,0"
                             FontAttributes="Bold"
-                            Text="Work Experience" />
+                            Text="Work Experience"
+                            TextColor="White" />
                         <Image HeightRequest="20" WidthRequest="20">
                             <Image.Source>
                                 <FontImageSource
                                     FontFamily="FontAwesomeSolid"
                                     Glyph="{x:Static models:FontAwesomeIconsSolid.UserTie}"
-                                    Color="Black" />
+                                    Color="White" />
                             </Image.Source>
                         </Image>
                     </HorizontalStackLayout>
@@ -273,26 +326,35 @@
                         Margin="1,0"
                         HeightRequest="1"
                         HorizontalOptions="FillAndExpand"
-                        Color="Black" />
+                        Color="White" />
                     <FlexLayout Direction="Row" Wrap="Wrap">
                         <RadioButton
                             Content="Peaceful"
                             GroupName="WorkExperience"
-                            IsChecked="{Binding SelectedDayTimeInsight.WorkExperience, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Peaceful'}" />
+                            IsChecked="{Binding SelectedDayTimeInsight.WorkExperience, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Peaceful'}"
+                            TextColor="White" />
 
                         <RadioButton
                             Content="Normal"
                             GroupName="WorkExperience"
-                            IsChecked="{Binding SelectedDayTimeInsight.WorkExperience, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Normal'}" />
+                            IsChecked="{Binding SelectedDayTimeInsight.WorkExperience, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Normal'}"
+                            TextColor="White" />
                         <RadioButton
                             Content="Stressful"
                             GroupName="WorkExperience"
-                            IsChecked="{Binding SelectedDayTimeInsight.WorkExperience, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Stressful'}" />
+                            IsChecked="{Binding SelectedDayTimeInsight.WorkExperience, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='Stressful'}"
+                            TextColor="White" />
                     </FlexLayout>
                 </VerticalStackLayout>
             </Border>
 
-            <Button Clicked="SubmitButton_Clicked" Text="Submit" />
+
+            <Button
+                Margin="10,5,10,5"
+                BackgroundColor="#363659"
+                Clicked="SubmitButton_Clicked"
+                Text="Submit"
+                TextColor="White" />
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

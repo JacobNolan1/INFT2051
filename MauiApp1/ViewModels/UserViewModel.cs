@@ -37,7 +37,6 @@ namespace Sleepwise.ViewModels
         }
         public void DeleteUser(UserModel model)
         {
-            //If it has an Id, then we can delete it
             if (model.Id > 0)
             {
                 connection.Delete(model);
