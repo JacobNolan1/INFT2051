@@ -16,6 +16,9 @@
             <Border.StrokeShape>
                 <RoundRectangle CornerRadius="10,10,10,10" />
             </Border.StrokeShape>
+            <Border.GestureRecognizers>
+                <TapGestureRecognizer Tapped="DoSummaryButton_Tapped" />
+            </Border.GestureRecognizers>
             <VerticalStackLayout>
                 <HorizontalStackLayout Spacing="10">
 

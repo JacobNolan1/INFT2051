@@ -4,32 +4,212 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:pages="clr-namespace:Sleepwise.Pages">
 
-    <VerticalStackLayout BackgroundColor="#f5f5f7">
-        <FlexLayout
-            Grid.Row="1"
-            Margin="0,0,0,20"
-            AlignItems="Start"
-            Direction="Row">
+    <ScrollView>
+        <VerticalStackLayout BackgroundColor="#181830">
+            <FlexLayout
+                Grid.Row="1"
+                Margin="0,0,0,20"
+                AlignItems="Start"
+                Direction="Row">
 
-            <Button
-                Clicked="HomeButton_Clicked"
-                FlexLayout.Grow="1"
-                Style="{StaticResource NavigationTopBarButton}"
-                Text="Home" />
+                <Button
+                    Clicked="HomeButton_Clicked"
+                    FlexLayout.Grow="1"
+                    Style="{StaticResource NavigationTopBarButton}"
+                    Text="Home" />
 
-            <Button
-                Clicked="StatsButton_Clicked"
-                FlexLayout.Grow="1"
-                Style="{StaticResource NavigationTopBarButtonSelected}"
-                Text="Stats" />
+                <Button
+                    Clicked="StatsButton_Clicked"
+                    FlexLayout.Grow="1"
+                    Style="{StaticResource NavigationTopBarButtonSelected}"
+                    Text="Stats" />
 
-            <Button
-                Clicked="SettingsButton_Clicked"
-                FlexLayout.Grow="1"
-                Style="{StaticResource NavigationTopBarButton}"
-                Text="Settings" />
+                <Button
+                    Clicked="SettingsButton_Clicked"
+                    FlexLayout.Grow="1"
+                    Style="{StaticResource NavigationTopBarButton}"
+                    Text="Settings" />
 
-        </FlexLayout>
-    </VerticalStackLayout>
+            </FlexLayout>
+
+            <Label
+                Margin="0,10,0,20"
+                FontAttributes="Bold"
+                FontSize="20"
+                HorizontalOptions="Center"
+                Text="Your Sleep Statistics"
+                TextColor="White" />
+
+
+
+            <Label
+                Margin="0,10,0,0"
+                FontAttributes="Bold"
+                FontSize="15"
+                HorizontalOptions="Center"
+                Text="Day Insights"
+                TextColor="White" />
+            <Border
+                Margin="10,0,10,0"
+                Padding="20"
+                Background="#363659"
+                Stroke="Black"
+                StrokeThickness="2">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="10,10,10,10" />
+                </Border.StrokeShape>
+                <VerticalStackLayout>
+                    <Label
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                        Text="Positive Day Insights on Sleep"
+                        TextColor="White"
+                        VerticalOptions="Center" />
+
+                    <ListView ItemsSource="{Binding positiveDayList}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout Margin="5,10,0,0">
+                                        <HorizontalStackLayout>
+                                            <Label Text="{Binding Question}" TextColor="White" />
+                                            <Label
+                                                Margin="0,0,2,0"
+                                                Text=":"
+                                                TextColor="White" />
+                                            <Label Text="{Binding Selection}" TextColor="White" />
+                                        </HorizontalStackLayout>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    <Label
+                        IsVisible="{Binding positiveDayListLength}"
+                        Text="No Positive Sleep Day Insights Yet."
+                        TextColor="White" />
+                    <BoxView
+                        Margin="0,4,0,10"
+                        HeightRequest="1"
+                        HorizontalOptions="FillAndExpand"
+                        Color="White" />
+                    <Label
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                        Text="Negative Insights on Sleep"
+                        TextColor="White"
+                        VerticalOptions="Center" />
+                    <ListView ItemsSource="{Binding negativeDayList}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout Margin="5,10,0,0">
+                                        <HorizontalStackLayout>
+                                            <Label Text="{Binding Question}" TextColor="White" />
+                                            <Label
+                                                Margin="0,0,2,0"
+                                                Text=":"
+                                                TextColor="White" />
+                                            <Label Text="{Binding Selection}" TextColor="White" />
+                                        </HorizontalStackLayout>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    <Label
+                        IsVisible="{Binding positiveDayListLength}"
+                        Text="No Negative Sleep Day Insights Yet."
+                        TextColor="White" />
+                    <HorizontalStackLayout Spacing="10" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Label
+                Margin="0,10,0,0"
+                FontAttributes="Bold"
+                FontSize="15"
+                HorizontalOptions="Center"
+                Text="Night Insights"
+                TextColor="White" />
+            <Border
+                Margin="10,0,10,0"
+                Padding="20"
+                Background="#363659"
+                Stroke="Black"
+                StrokeThickness="2">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="10,10,10,10" />
+                </Border.StrokeShape>
+                <VerticalStackLayout>
+                    <Label
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                        Text="Positive Night Insights on Sleep"
+                        TextColor="White"
+                        VerticalOptions="Center" />
+
+                    <ListView ItemsSource="{Binding positiveNightList}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout Margin="5,10,0,0">
+                                        <HorizontalStackLayout>
+                                            <Label Text="{Binding Question}" TextColor="White" />
+                                            <Label
+                                                Margin="0,0,2,0"
+                                                Text=":"
+                                                TextColor="White" />
+                                            <Label Text="{Binding Selection}" TextColor="White" />
+                                        </HorizontalStackLayout>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    <Label
+                        IsVisible="{Binding positiveNightListLength}"
+                        Text="No Positive Sleep Day Insights Yet."
+                        TextColor="White" />
+                    <BoxView
+                        Margin="0,4,0,10"
+                        HeightRequest="1"
+                        HorizontalOptions="FillAndExpand"
+                        Color="White" />
+                    <Label
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                        Text="Negative Insights on Sleep"
+                        TextColor="White"
+                        VerticalOptions="Center" />
+                    <ListView ItemsSource="{Binding negativeNightList}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout Margin="5,10,0,0">
+                                        <HorizontalStackLayout>
+                                            <Label Text="{Binding Question}" TextColor="White" />
+                                            <Label
+                                                Margin="0,0,2,0"
+                                                Text=":"
+                                                TextColor="White" />
+                                            <Label Text="{Binding Selection}" TextColor="White" />
+                                        </HorizontalStackLayout>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    <Label
+                        IsVisible="{Binding positiveNightListLength}"
+                        Text="No Negative Sleep Night Insights Yet."
+                        TextColor="White" />
+                    <HorizontalStackLayout Spacing="10" />
+                </VerticalStackLayout>
+            </Border>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
 

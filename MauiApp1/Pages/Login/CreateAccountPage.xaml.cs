@@ -51,7 +51,7 @@ public partial class CreateAccountPage : ContentPage
                 };
                 viewModel.SaveUser(userModel);
                 OnDataToPassBack(emailString);
-                Navigation.PopAsync();
+                Navigation.PopModalAsync();
             }
         }
     }
