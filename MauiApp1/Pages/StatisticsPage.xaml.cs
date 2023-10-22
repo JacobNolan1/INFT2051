@@ -21,15 +21,16 @@ public partial class StatisticsPage : ContentPage
 
     public StatisticsPage()
 	{
+        int user_id = Preferences.Default.Get<int>("user_id", -1);
         NavigationPage.SetHasNavigationBar(this, false);
         NavigationPage.SetHasBackButton(this, false);
         a = "No Insights Could Be Developed Yet";
         viewModelDay = new DayTimeRatingInsightViewModel();
         viewModelNight = new NightTimeRatingInsightViewModel();
-        positiveDayList = viewModelDay.LoadPositiveRatingInsight();
-        negativeDayList = viewModelDay.LoadNegativeRatingInsight();
-        positiveNightList = viewModelNight.LoadPositiveRatingInsight();
-        negativeNightList = viewModelNight.LoadNegativeRatingInsight();
+        positiveDayList = viewModelDay.LoadPositiveRatingInsight(user_id);
+        negativeDayList = viewModelDay.LoadNegativeRatingInsight(user_id);
+        positiveNightList = viewModelNight.LoadPositiveRatingInsight(user_id);
+        negativeNightList = viewModelNight.LoadNegativeRatingInsight(user_id);
 
         positiveDayListLength = positiveDayList.Count <= 0;
         negativeDayListLength = negativeDayList.Count <= 0;

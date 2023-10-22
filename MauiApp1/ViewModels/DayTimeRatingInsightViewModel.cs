@@ -35,9 +35,8 @@ namespace Sleepwise.ViewModels
                 }
             }
         }
-        public List<DayTimeRatingInsightModel> LoadPositiveRatingInsight()
+        public List<DayTimeRatingInsightModel> LoadPositiveRatingInsight(int user_id)
         {
-            int user_id = Preferences.Default.Get<int>("user_id", -1);
             List<DayTimeRatingInsightModel> DayPositiveInsight = _connection.Table<DayTimeRatingInsightModel>()
                 .Where(insight => insight.UserId == user_id)
                 .GroupBy(insight => new { insight.Question, insight.Selection })
@@ -51,9 +50,8 @@ namespace Sleepwise.ViewModels
                 .Take(3).ToList();
             return DayPositiveInsight;
         }
-        public List<DayTimeRatingInsightModel> LoadNegativeRatingInsight()
+        public List<DayTimeRatingInsightModel> LoadNegativeRatingInsight(int user_id)
         {
-            int user_id = Preferences.Default.Get<int>("user_id", -1);
 
             List<DayTimeRatingInsightModel> DayNegativeInsight = _connection.Table<DayTimeRatingInsightModel>()
             .Where(insight => insight.UserId == user_id)

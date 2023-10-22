@@ -167,6 +167,7 @@ public partial class NightInsightContainer : ContentView, INotifyPropertyChanged
 
     public void ReloadNightInsight()
     {
+        user_id = Preferences.Default.Get<int>("user_id", -1);
         viewModel.LoadNightTimeInsightForDate(user_id, SelectedDate);
         IsSummaryDone = viewModel.SelectedNightTimeInsight.IsCompleted;
         IsSummaryNotDone = !IsSummaryDone;

@@ -42,7 +42,7 @@ public partial class CreateAccountPage : ContentPage
                 // User already exists, set the visibility property to true
                 viewModel.UserExistsMessageVisible = true;
             } else
-            {
+            { 
                 viewModel.UserExistsMessageVisible = false;
                 UserModel userModel = new UserModel
                 {

@@ -165,6 +165,7 @@ namespace Sleepwise.Pages
 
         public void ReloadDayInsight()
         {
+            user_id = Preferences.Default.Get<int>("user_id", -1);
             viewModel.LoadDayTimeInsightForDate(user_id, SelectedDate);
             IsSummaryDone = viewModel.SelectedDayTimeInsight.IsCompleted;
             IsSummaryNotDone = !IsSummaryDone;

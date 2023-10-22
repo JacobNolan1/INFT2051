@@ -37,9 +37,8 @@ namespace Sleepwise.ViewModels
         }
 
 
-        public List<NightTimeRatingInsightModel> LoadPositiveRatingInsight()
+        public List<NightTimeRatingInsightModel> LoadPositiveRatingInsight(int user_id)
         {
-            int user_id = Preferences.Default.Get<int>("user_id", -1);
 
             List<NightTimeRatingInsightModel> NightPositiveInsight = _connection.Table<NightTimeRatingInsightModel>()
                 .Where(insight => insight.UserId == user_id)
@@ -54,9 +53,8 @@ namespace Sleepwise.ViewModels
                 .Take(3).ToList();
             return NightPositiveInsight;
         }
-        public List<NightTimeRatingInsightModel> LoadNegativeRatingInsight()
+        public List<NightTimeRatingInsightModel> LoadNegativeRatingInsight(int user_id)
         {
-            int user_id = Preferences.Default.Get<int>("user_id", -1);
 
             List<NightTimeRatingInsightModel> NightNegativeInsight = _connection.Table<NightTimeRatingInsightModel>()
             .Where(insight => insight.UserId == user_id)
